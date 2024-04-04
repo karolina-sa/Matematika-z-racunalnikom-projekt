@@ -235,6 +235,9 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT .\output.png
 INPUT .\output.png
 INPUT .\output.png
@@ -242,7 +245,15 @@ INPUT .\output.png
 INPUT .\output.png
 INPUT .\output.png
 INPUT .\output.png
+INPUT .\output_dva.png
+INPUT .\output_dva.png
+INPUT .\output_dva.png
+INPUT .\output_dva.png
+INPUT .\output_dva.png
+INPUT .\output_dva.png
+INPUT .\output_dva.png
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT kratko_porocilo.aux
 INPUT .\kratko_porocilo.out
 INPUT .\kratko_porocilo.out
@@ -250,6 +261,8 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr12.pfb

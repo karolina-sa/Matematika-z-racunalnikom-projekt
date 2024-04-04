@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.28)  4 APR 2024 21:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.28)  4 APR 2024 22:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,31 +454,36 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 56.
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
 
  []
 
 <output.png, id=18, 723.4227pt x 292.6935pt>
 File: output.png Graphic file (type png)
 <use output.png>
-Package pdftex.def Info: output.png  used on input line 64.
+Package pdftex.def Info: output.png  used on input line 69.
 (pdftex.def)             Requested size: 327.74895pt x 132.60408pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--72
+Underfull \hbox (badness 10000) in paragraph at lines 72--77
 
  []
 
+<output_dva.png, id=20, 787.0203pt x 354.123pt>
+File: output_dva.png Graphic file (type png)
+<use output_dva.png>
+Package pdftex.def Info: output_dva.png  used on input line 82.
+(pdftex.def)             Requested size: 327.74895pt x 147.47162pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--80
+Underfull \hbox (badness 10000) in paragraph at lines 85--95
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--84
+[2{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc} <./output.png> <./output_dva.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
 
-[2{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc} <./output.png>] (kratko_porocilo.aux)
+[3] (kratko_porocilo.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -487,17 +492,17 @@ Package rerunfilecheck Info: File `kratko_porocilo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12277 strings out of 475550
- 190167 string characters out of 5772263
+ 12299 strings out of 475550
+ 190481 string characters out of 5772263
  1925238 words of memory out of 5000000
- 33284 multiletter control sequences out of 15000+600000
- 598804 words of font info for 75 fonts, out of 8000000 for 9000
+ 33300 multiletter control sequences out of 15000+600000
+ 607775 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,355b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on kratko_porocilo.pdf (2 pages, 306008 bytes).
+<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
+Output written on kratko_porocilo.pdf (3 pages, 470898 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

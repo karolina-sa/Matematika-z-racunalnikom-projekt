@@ -28,12 +28,12 @@
 
 \noindent V projektni nalogi bom pod mentorstvom GEN-I analizirala in napovedovala odjem električne energije 
 \textbf{gospodinjskih odjemalcev} (v analizo niso vključeni samooskrbni odjemalci, torej tisti, 
-ki imajo sončno elektrarno). Gre za obravnavo časovne vrste; odjema električne energije skozi čas. \\
+ki imajo lastno sončno elektrarno). Obravnavala bom časovno vrsto; odjem električne energije skozi čas. \\
 
 \noindent Glavni cilj projekta je sestaviti metodo, model, ki bo napovedal odjem za celotni naslednji dan (za naslednjih 24 ur), 
-kjer bomo upoštevali dejavnike, ki se nam zdijo pomembni za napoved (temperatura, sevanje). \\
+kjer se bodo upoštevali dejavniki, ki se nam zdijo pomembni za napoved (temperatura, sevanje). \\
 
-\noindent Podjetje GEN-I je pripravilo tabelo podatkov, sestavljeno iz sedem stolpcev:
+\noindent Podjetje GEN-I je pripravilo tabelo podatkov, sestavljeno iz sedmih stolpcev:
 \begin{itemize}
     \item  \texttt{DateTimeStartUTC}: univerzalni koordinirani čas,
     \item  \texttt{DateTimeStartCET}: srednjeevropski čas,
@@ -46,40 +46,55 @@ kjer bomo upoštevali dejavnike, ki se nam zdijo pomembni za napoved (temperatur
 
 \begin{figure}[h!]
     \centering
-    \caption{Podatki (vir: GEN-I)}\par\medskip
+    \caption{Podatki, 2021-2024 (vir: GEN-I)}\par\medskip
     \includegraphics[width=\textwidth]{tabela.png}
 \end{figure}
 
-\noindent Uporabljala bom vse stolpce, razen stolpca \texttt{DateTimeStartUTC}, saj v 
+\noindent Uporabljala bom vse stolpce v tabeli, razen stolpca \texttt{DateTimeStartUTC}, saj v 
 okviru časa ključen stolpec \texttt{DateTimeStartCET}.  \\
 
-\noindent Odjem je podan za odboje od $1$. novembra $2021$ do $12$. februarja $2024$, 
+\noindent Odjem je podan za odboje od $1.~\text{novembra}~2021$ 
+do $12.~\text{februarja}~2024$,
 na vsakih $15$ minut in obsega $80063$ enot podatkov. \\
 
-\noindent Poglejmo si odjem za leti $2022$ in $2023$. Zaradi boljše preglednosti sem podatke povprečila na dnevni ravni.
+\subsection*{Motivacija}
+
+\noindent Poglejmo si odjem za leti $2022$ in $2023$. Zaradi boljše preglednosti 
+so podatki povprečeni na dnevni ravni.
 
 \begin{figure}[h!]
     \centering
-    \caption{Podatki (Odjem električne energije, 2022-2023)}\par\medskip
+    \caption{Odjem električne energije, 2022-2023}\par\medskip
+    \label{fig:LineGraf}
     \includegraphics[width=0.95\textwidth]{output.png}
 \end{figure}
 
-\noindent Z grafa je razvidna sezonskost; očitno večji odjem v zimskih mesecih, kar je pomembno pri 
+\noindent S Slike~\ref{fig:LineGraf} je razvidna sezonskost - očitno večji odjem v zimskih mesecih - kar je pomembno pri 
 načrtovanju in upravljanju proizvodnje in distribucije električne energije. 
 V zimskih mesecih je odjem višji, zaradi ogrevanja, razsvetljave, saj se število ur 
 dnevne svetlobe podaljša in nasploh se poveča uporaba električnih aparatov, kot 
-so grelniki, sušilniki in podobno.  \\
+so grelniki in sušilniki.  \\
 
-\noindent Torej na odjem električne energije ključno vpliva del leta in s tem temperature, 
-ki jih imamo podane v tabeli. Imamo pa tudi podatek 
+\begin{figure}[h!]
+    \centering
+    \caption{Povezava med odjemom in temperaturo ter sevanjem, 2021-2024}\par\medskip
+    \label{fig:Scatter}
+    \includegraphics[width=0.95\textwidth]{output_dva.png}
+\end{figure}
+
+\noindent Torej na odjem električne energije ključno vpliva del leta in s tem temperature, kar je razvidno tudi iz Slike~\ref{fig:Scatter}.  
+V tabeli pa imamo podane tudi podatek 
 sevanja, ki pričakujem, da ne bo tako pomemben, saj v moji analizi niso 
-vključeni odjemalci, ki imajo sončno elektrarno. Mogoče pa bo vseeno 
-imel nekaj vpliva, saj močna sončna svetloba povzroči povečano porabo 
-električne energije za hlajenje, ker se ljudje zatekajo k napravam za 
-hlajenje prostorov. \\
+vključeni odjemalci, ki imajo sončno elektrarno. S Slike~\ref{fig:Scatter} res ni 
+opaziti povezave med odjemom in sevanjem. 
+Mogoče pa bo vseeno sevanje
+imelo nekaj vpliva pri napovedovanju, saj močna sončna svetloba vendarle povzroči povečano porabo 
+električne energije, saj se poveča uporaba naprav za hlajenje. \\
+Podatek sevanja je ključen predvsem v primeru obravnave samooskrbnih odjemalcev, ki
+jih moja analiza ne vključuje. \\
 
-\noindent Analiza in napovedovanje bo izvedeno v programskem jeziku Python, na zgornjih podatki, ki jih bom 
-mogoče dopolnila, še s kakšnin novim relevantnim dejavnikom, ki ga bom najverjetneje pridobila
+\noindent Analiza in napovedovanje bo v večini izvedeno v programskem jeziku Python, na zgornjih podatki, ki jih bom 
+mogoče dopolnila s kakšnin novim, relevantnim dejavnikom za napoved, ki ga bom najverjetneje pridobila
 s strani \href{https://ot.borzen.si/Domov/Podatki-trga/Koli%C4%8Dine-in-zneski-izravnave}{Borzen}. \\
 
 
