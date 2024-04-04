@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1712256638 "c:/Users/Uporabnik/OneDrive/Namizje/SOLA/MAGISTERIJ/MATEMATIKA Z RACUNALNIKOM/Matematika-z-racunalnikom-projekt/kratko_porocilo.tex" "kratko_porocilo.pdf" "kratko_porocilo" 1712256640 0
+["pdflatex"] 1712258256 "c:/Users/Uporabnik/OneDrive/Namizje/SOLA/MAGISTERIJ/MATEMATIKA Z RACUNALNIKOM/Matematika-z-racunalnikom-projekt/kratko_porocilo.tex" "kratko_porocilo.pdf" "kratko_porocilo" 1712258258 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256933040 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc" 1256933040 2327 9d6df24f9c4f7368395224341a95523a ""
   "C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc" 1256933040 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
@@ -119,10 +119,10 @@
   "C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576437552 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1686255640 12691 ddae4e0162a664f166015d992388b742 ""
-  "c:/Users/Uporabnik/OneDrive/Namizje/SOLA/MAGISTERIJ/MATEMATIKA Z RACUNALNIKOM/Matematika-z-racunalnikom-projekt/kratko_porocilo.tex" 1712256637 3751 e7493db778c47ebc8c867e5921d19bed ""
-  "kratko_porocilo.aux" 1712256640 943 ef7319ebd52fa76066efe131e34127fe "pdflatex"
-  "kratko_porocilo.out" 1712256639 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "kratko_porocilo.tex" 1712256637 3751 e7493db778c47ebc8c867e5921d19bed ""
+  "c:/Users/Uporabnik/OneDrive/Namizje/SOLA/MAGISTERIJ/MATEMATIKA Z RACUNALNIKOM/Matematika-z-racunalnikom-projekt/kratko_porocilo.tex" 1712258255 3734 c125c1c6495683ba75ee784eb017dcc7 ""
+  "kratko_porocilo.aux" 1712258258 943 ef7319ebd52fa76066efe131e34127fe "pdflatex"
+  "kratko_porocilo.out" 1712258257 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "kratko_porocilo.tex" 1712258255 3734 c125c1c6495683ba75ee784eb017dcc7 ""
   "output.png" 1712255379 106678 356c65d4f5cb8ddf2cc4daf60e47d177 ""
   "tabela.png" 1712254479 102680 4a8d79b698f72d8899c1745df8a1f609 ""
   (generated)
