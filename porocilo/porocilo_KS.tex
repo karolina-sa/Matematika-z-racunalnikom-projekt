@@ -109,7 +109,7 @@ električne energije v drugem tednu septembra 2023. Imamo torej tudi sezonskost 
     \includegraphics[width=0.9\textwidth]{odjem_teden.png}
 \end{figure}
 
-\noindent Zaključimo lahko, da je naša časovna vrsta visokofrekvenčna, ima sezonsko komponentno ter njeno povprečje ni konstano.
+\noindent Zaključimo lahko, da je naša časovna vrsta visokofrekvenčna, ima sezonsko komponentno ter njeno povprečje ni konstantno.
 
 % =======================================================================================================================
 % =======================================================================================================================
@@ -197,7 +197,7 @@ SARIMA.
 
 \subsection{Identifikacija modela SARIMA}
 
-\noindent Na podlagi ACF in PACF stacionarne časovne vrste $X_t$ izberimo parametre 
+\noindent Na podlagi ACF in PACF (Slika~\ref{fig:ts_diff_2_acf_pacf}) stacionarne časovne vrste $X_t$ izberimo parametre 
 modela SARIMA(p, d, q)(P, D, Q)[S]. Kaj sploh predstavljajo ti parametri? Razdelimo jih lahko v dve skupini,
 in sicer v skupino nesezonskih (p, d, q) in sezonskih (P, D, Q, S)~\cite{SARIMA_param}:
 
@@ -211,6 +211,24 @@ in sicer v skupino nesezonskih (p, d, q) in sezonskih (P, D, Q, S)~\cite{SARIMA_
     \item S \dots
 \end{itemize}
 
+\noindent Ker smo časovno vrsto enkrat sezonsko diferencirali bo $\text{D} = 1$ in ker smo jo enkrat 
+navadno diferencirali bo $\text{d} = 1$. Perioda je enaka $96$, torej je $\text{S} = 96$. \\
+
+\noindent Za določitev sezonskih parametrov P in Q gledamokorelacije pri odlogih, ki so večkratniki periode S. Pri
+PACF visoko korelacijo opazimo predvsem pri $96$ in $192$, nato pa se z vsako dodatno periodo manjša. Parameter P je torej 
+$1$ ali več; predlagala bi $1$, $2$ ali $3$. 
+Pri ACF pa je občutna korelacija zgolj pri $96$, zato vzamemo $\text{Q} = 1$. \\
+
+\noindent Za lažjo določitev nesezonskih parametrov p in q bomo gledali ACF in PACF do prve periode (torej do odloga 96). 
+Slednje je prikazano na Slika~\ref{fig:ts_diff_2_acf_pacf_do_100}. Tako iz PACF, kot tudi iz ACF, je opazna večja korelacija
+pri prvih nekaj urah in v uri tik pred periodo. V modelu bomo zato zagotovo vključili prvih nekaj ur, saj le-te kažejo močan vpliv. \\
+
+\begin{figure}[h!]
+    \centering
+    \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste po prvem nesezonskem diferenciranju, odlogi do 100}\par\medskip
+    \label{fig:ts_diff_2_acf_pacf_do_100}
+    \includegraphics[width=0.9\textwidth]{ts_diff_2_acf_pacf_do_100.png}
+\end{figure}
 
 
 % =======================================================================================================================
@@ -232,6 +250,7 @@ in sicer v skupino nesezonskih (p, d, q) in sezonskih (P, D, Q, S)~\cite{SARIMA_
 % =======================================================================================================================
 % =======================================================================================================================
 
+\pagebreak
 
 \bibliographystyle{abbrv}
 \bibliography{literatura.bib}
