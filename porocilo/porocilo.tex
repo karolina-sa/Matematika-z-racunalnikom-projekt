@@ -1,4 +1,4 @@
-\documentclass[a4paper, 10pt]{article}
+\documentclass[a4paper, 11pt]{article}
 
 \usepackage[slovene]{babel}
 \usepackage[utf8]{inputenc}
@@ -33,10 +33,111 @@
 \maketitle
 
 % =======================================================================================================================
+% =======================================================================================================================
 
-\noindent V projektni nalogi bom pod mentorstvom GEN-I analizirala in napovedovala odjem električne energije 
-\textbf{gospodinjskih odjemalcev} (v analizo niso vključeni samooskrbni odjemalci, torej tisti, 
-ki imajo lastno sončno elektrarno). Obravnavala bom časovno vrsto; odjem električne energije skozi čas. \\
+
+\section{Uvod}
+
+Cilj projektne naloge je sestaviti model, ki bo napovedal odjem električne energije 
+za celotni naslenji dan (za naslednjih $24$ ur). 
+
+
+
+% =======================================================================================================================
+% =======================================================================================================================
+
+
+\section{Osnovna analiza časovne vrste}
+
+\noindent Podjetje GEN-I je v obliki excel razpredelnice pripravilo tabelo podatkov, sestavljeno iz sedmih stolpcev:
+\begin{itemize}
+    \item  \texttt{DateTimeStartUTC}: univerzalni koordinirani čas,
+    \item  \texttt{DateTimeStartCET}: srednjeevropski čas,
+    \item  \texttt{Odjem ACT}: neto odjem električne energije v kWh,
+    \item  \texttt{Temperatura ACT}: dejanska temperatura, 
+    \item  \texttt{Temperatura FC}: napovedana temperatura,
+    \item  \texttt{Sevanje ACT}: dejansko sevanje in
+    \item  \texttt{Sevanje FC}: napovedano sevanje. 
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \caption{Tabela podatkov, 2021-2024}\par\medskip
+    \includegraphics[width=0.9\textwidth]{tabela.png}
+\end{figure}
+
+\noindent V analizi sem uporabljala vse stolpce, razen stolpca \texttt{DateTimeStartUTC}, saj je v 
+okviru časa bolj relavanten stolpec \texttt{DateTimeStartCET}. Podatki so podani za odboje od $1.~\text{novembra}~2021$ do $12.~\text{februarja}~2024$,
+na vsakih $15$ minut. Tabela ima torej vsega skupaj $80064$ vrstic. \\
+
+\begin{figure}[h!]
+    \centering
+    \caption{Odjem električne energije, 2021-2024}\par\medskip
+    \label{fig:odjem_EE}
+    \includegraphics[width=0.9\textwidth]{odjem_EE.png}
+\end{figure}
+
+\noindent Slika~\ref{fig:odjem_EE} prikazuje odjem električne energije za obdobje od 
+$1.~\text{novembra}~2021$ do $12.~\text{februarja}~2024$. 
+Opaznoa je sezonskost; odjem je znatno večji jeseni in pozimi, zaradi povečane uporabe energije za ogrevanje in 
+razsvetljevo, saj se število ur dnevne svetlobe podaljša. 
+
+\begin{table}[!h]
+    \centering
+    \caption{Opisne statistike porabe električne energije, 2021-2024}\par\medskip
+    \label{Tab:opisne_statistike}
+    \begin{tabular}{l||l|l|l|l|l}
+              & Min & Max & Povprečje & Mediana & Standardni odklon \\ \hline \hline
+        Odjem [MWh] & 3629,32 & 28736,80 & 12240,53 & 11708,50 & 4167,98 \\ 
+    \end{tabular}
+\end{table}
+
+\noindent S Tabele~\ref{Tab:opisne_statistike} preberemo, da je povprečna poraba električne energije gospodinjskih odjemalcev
+okrog $12240{,}53 $ MWh, minimalna dosežena vrednost je $3629{,}32$ MWh, maksimalna pa $28736{,}80$ MWh. Vrednosti varirajo
+okrog $4167{,}98$ MWh.
+
+\noindent Odjem električne energije je med tednom najmanjši ponoči in se veča do viška okrog 18. ure. 
+V soboto in nedeljo pa je višek dopoldne, kar je opazno s Slike~\ref{Tab:odjem_teden}, ki prikazuje odjem 
+električne energije v drugem tednu septembra 2023. 
+
+\begin{figure}[h!]
+    \centering
+    \caption{Odjem električne energije po dneh, drugi teden septembra 2023}\par\medskip
+    \label{fig:odjem_teden}
+    \includegraphics[width=0.9\textwidth]{odjem_teden.png}
+\end{figure}
+
+
+
+
+
+
+% =======================================================================================================================
+% =======================================================================================================================
+
+
+\section{Napredna analiza}
+
+
+
+% =======================================================================================================================
+% =======================================================================================================================
+
+
+\section{Izbira modela}
+
+
+
+% =======================================================================================================================
+% =======================================================================================================================
+
+
+\section{Zaključek}
+
+
+
+% =======================================================================================================================
+% =======================================================================================================================
 
 
 \end{document}
