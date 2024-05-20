@@ -70,7 +70,7 @@ Celotna analiza je izvedena v programskem jeziku \href{https://www.python.org/}{
 
 \noindent V analizi sem uporabljala vse stolpce, razen stolpca \texttt{DateTimeStartUTC}, saj je v 
 okviru časa bolj relavanten stolpec \texttt{DateTimeStartCET}. Podatki so podani za odboje od $1.~\text{novembra}~2021$ do $12.~\text{februarja}~2024$,
-na vsakih $15$ minut. Tabela ima torej vsega skupaj $80064$ vrstic. \\
+na vsakih $15$ minut. Tabela ima torej vsega skupaj $80064$ vrstic.
 
 \begin{figure}[h!]
     \centering
@@ -100,22 +100,116 @@ okrog $4167{,}98$ MWh. \\
 
 \noindent Odjem električne energije je med tednom najmanjši ponoči in se veča do viška okrog 18 ure. 
 V soboto in nedeljo pa je prvi višek porabe dopoldne, drugi pa okrog 18 ure, kar je opazno s Slike~\ref{fig:odjem_teden}, ki prikazuje odjem 
-električne energije v drugem tednu septembra 2023. \\
+električne energije v drugem tednu septembra 2023. Imamo torej tudi sezonskost na dnevni ravni.
 
 \begin{figure}[h!]
     \centering
-    \caption{Odjem električne energije po dneh, drugi teden septembra 2023}\par\medskip
+    \caption{Odjem električne energije po urah, drugi teden septembra 2023}\par\medskip
     \label{fig:odjem_teden}
     \includegraphics[width=0.9\textwidth]{odjem_teden.png}
 \end{figure}
 
-
+\noindent Zaključimo lahko, da je naša časovna vrsta visokofrekvenčna, ima sezonsko komponentno ter njeno povprečje ni konstano.
 
 % =======================================================================================================================
 % =======================================================================================================================
 
 
 \section{Napredna analiza}
+
+\subsection{Izbira družine modelov}
+
+ARIMA je model, ki pri napovedovanju zajame vzorce, trende in sezonskost podatkov s kombinacijo preteklih 
+vrednosti, razlik in napak. Ker pa imamo v podatkih očitno sezonskost, lahko ARIMO nadgradimo v SARIMO, ki dodatno
+upošteva še sezonske vzorce. Ta družina modelov ima težavo predvsem pri napovedih, ko ima časovna vrsta 
+skozi čas spremembo variance. Da bo naše napovedovanje bolj učinkovito, bomo naš SARIMA nadgradili v 
+model SARIMA-GARCH, saj se model GARCH uporablja ravno za modeliranje združevanja volatilnosti 
+v podatke časovnih vrst.~\cite{ArimaGarch}
+
+
+\subsection{Odstranitev sezonskosti in pridobitev stacionarnosti}
+
+Da bomo lahko indentificiralni potencialne modele, moramo najprej originalno časovno vrsto (Slika~\ref{fig:odjem_EE})
+narediti stacionarno. \\
+
+\noindent Ker so naši podatki volatilni najprej naredimo \textbf{logaritmične donose} 
+(ang. \emph{log returns}). Če z $W_t$ označimo originalno časovno vrsto odjema električne energije, so logaritmični donosi
+definirani kot časovna vrsta $ Y_t = \ln \left( \frac{W_t}{W_{t-1}} \right) $. Slednja časovna vrsta je prikazana na
+Slika~\ref{fig:log_returns}.
+
+\begin{figure}[h!]
+    \centering
+    \caption{Logaritmični donosi odjema električne energije, 2021-2024}\par\medskip
+    \label{fig:log_returns}
+    \includegraphics[width=0.9\textwidth]{log_returns.png}
+\end{figure}
+
+\noindent Slika~\ref{fig:log_returns_acf_pacf} prikazuje 
+ACF (vzorčno avtokorelacijo) in PACF (vzorčna parcialna avtokorelacija) logaritmičnih donosov do odloga $1000$ (to je
+malo manj kot dva tedna). Z grafov je očitno, da časovna vrsta ni stacionarna. Opazna je sezonska komponentna, in sicer $96$, 
+kar je ravno en dan \footnote{Podatki so podani na $15$ minut in $15\,\text{min} \cdot 96 = 1440\,\text{min}$, kar je ravno en dan.}.
+
+\begin{figure}[h!]
+    \centering
+    \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste logaritmičnih donosov}\par\medskip
+    \label{fig:log_returns_acf_pacf}
+    \includegraphics[width=0.9\textwidth]{log_returns_acf_pacf.png}
+\end{figure}
+
+\noindent Da dosežemo stacionarnost, se je potrebno sezonskosti znebiti, zato bomo podatke \textbf{sezonsko diferencirali}.
+Nova časovna vrsta bo $Z_t = Y_t - Y_{t-96}$. Prikazana je na Slika~\ref{fig:ts_diff}, njeni ACF in PACF pa na Slika~\ref{fig:ts_diff_acf_pacf}.
+
+\begin{figure}[h!]
+    \centering
+    \caption{Časovna vrsta po sezonskem diferenciranju, 2021-2024}\par\medskip
+    \label{fig:ts_diff}
+    \includegraphics[width=0.9\textwidth]{ts_diff.png}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste po sezonskem diferenciranju}\par\medskip
+    \label{fig:ts_diff_acf_pacf}
+    \includegraphics[width=0.9\textwidth]{ts_diff_acf_pacf.png}
+\end{figure}
+
+\noindent Na grafu ACF opazimo ponavljanje vzorca, kar pomeni, da časovna vrsta $Z_t$ še kar ni stacionarna. 
+Še enkrat jo diferenciramo in dobimo vrsto $X_t = Z_t - Z_{t-1}$. 
+Prikazana je na Slika~\ref{fig:ts_diff_2}, njeni ACF in PACF pa na Slika~\ref{fig:ts_diff_2_acf_pacf}.
+
+\begin{figure}[h!]
+    \centering
+    \caption{Časovna vrsta po prvem nesezonskem diferenciranju, 2021-2024}\par\medskip
+    \label{fig:ts_diff_2}
+    \includegraphics[width=0.9\textwidth]{ts_diff_2.png}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste po prvem nesezonskem diferenciranju}\par\medskip
+    \label{fig:ts_diff_2_acf_pacf}
+    \includegraphics[width=0.9\textwidth]{ts_diff_2_acf_pacf.png}
+\end{figure}
+
+\noindent Dobljena časovna vrsta $X_t$ zgleda stacionarno in tudi formalni testi Augmented Dickey-Fuller (ADF), 
+KPSS in Phillips-Perron potrdijo njeno stacionarnost. Časovna vrsta je torej primerna za izbero parametrov modela
+SARIMA. 
+
+\subsection{Identifikacija modela SARIMA}
+
+\noindent Na podlagi ACF in PACF stacionarne časovne vrste $X_t$ izberimo parametre 
+modela SARIMA(p, d, q)(P, D, Q)[S]. Kaj sploh predstavljajo ti parametri? Razdelimo jih lahko v dve skupini,
+in sicer v skupino nesezonskih (p, d, q) in sezonskih (P, D, Q, S)~\cite{SARIMA_param}:
+
+\begin{itemize}
+    \item p \dots
+    \item d \dots
+    \item q \dots
+    \item P \dots
+    \item D \dots
+    \item Q \dots
+    \item S \dots
+\end{itemize}
 
 
 
@@ -137,6 +231,10 @@ električne energije v drugem tednu septembra 2023. \\
 
 % =======================================================================================================================
 % =======================================================================================================================
+
+
+\bibliographystyle{abbrv}
+\bibliography{literatura.bib}
 
 
 \end{document}

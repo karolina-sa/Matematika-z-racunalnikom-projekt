@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{ArimaGarch}
+T.~Dierckx.
+\newblock {ARIMA-GARCH forecasting with Python}.
+\newblock {\em Medium}, Sept. 2020.
+
+\bibitem{SARIMA_param}
+B.~Köseoğlu.
+\newblock {Guide to Time Series Analysis with Python — 4: ARIMA and SARIMA}.
+\newblock {\em Medium}, Jan. 2024.
+
+\end{thebibliography}
