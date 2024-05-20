@@ -233,25 +233,25 @@ INPUT .\tabela.png
 INPUT .\tabela.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
 INPUT C:\Users\Uporabnik\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
-INPUT .\odjem_teden.png
-INPUT .\odjem_teden.png
-INPUT .\odjem_teden.png
-INPUT .\odjem_teden.png
-INPUT .\odjem_teden.png
-INPUT .\odjem_teden.png
-INPUT .\odjem_teden.png
 INPUT porocilo_KS.aux
 INPUT .\porocilo_KS.out
 INPUT .\porocilo_KS.out
