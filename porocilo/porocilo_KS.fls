@@ -1,7 +1,7 @@
 PWD c:\Users\Uporabnik\OneDrive\Namizje\SOLA\MAGISTERIJ\MATEMATIKA Z RACUNALNIKOM\Matematika-z-racunalnikom-projekt\porocilo
 INPUT C:\Users\Uporabnik\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Uporabnik\OneDrive\Namizje\SOLA\MAGISTERIJ\MATEMATIKA Z RACUNALNIKOM\Matematika-z-racunalnikom-projekt\porocilo\porociloKS.tex
-OUTPUT porociloKS.log
+INPUT c:\Users\Uporabnik\OneDrive\Namizje\SOLA\MAGISTERIJ\MATEMATIKA Z RACUNALNIKOM\Matematika-z-racunalnikom-projekt\porocilo\porocilo_KS.tex
+OUTPUT porocilo_KS.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
@@ -156,7 +156,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-OUTPUT porociloKS.aux
+INPUT .\porocilo_KS.aux
+INPUT .\porocilo_KS.aux
+INPUT porocilo_KS.aux
+OUTPUT porocilo_KS.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -165,4 +168,251 @@ INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-OUTPUT porociloKS.out
+INPUT .\porocilo_KS.out
+INPUT .\porocilo_KS.out
+INPUT porocilo_KS.out
+INPUT porocilo_KS.out
+OUTPUT porocilo_KS.pdf
+INPUT .\porocilo_KS.out
+INPUT .\porocilo_KS.out
+OUTPUT porocilo_KS.out
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\ot1lmr.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\ot1lmr.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\ot1lmr.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr6.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\omllmm.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\omllmm.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\omllmm.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi6.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\omslmsy.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\omslmsy.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\omslmsy.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy6.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\omxlmex.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\omxlmex.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\omxlmex.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmex10.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ts1-lmr10.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
+INPUT .\tabela.png
+INPUT .\tabela.png
+INPUT .\tabela.png
+INPUT .\tabela.png
+INPUT .\tabela.png
+INPUT .\tabela.png
+INPUT .\tabela.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
+INPUT C:\Users\Uporabnik\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT .\odjem_teden.png
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
+INPUT .\temp_sevanje.png
+INPUT .\temp_sevanje.png
+INPUT .\temp_sevanje.png
+INPUT .\temp_sevanje.png
+INPUT .\temp_sevanje.png
+INPUT .\temp_sevanje.png
+INPUT .\temp_sevanje.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
+INPUT .\log_returns.png
+INPUT .\log_returns.png
+INPUT .\log_returns.png
+INPUT .\log_returns.png
+INPUT .\log_returns.png
+INPUT .\log_returns.png
+INPUT .\log_returns.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\ts_diff.png
+INPUT .\ts_diff.png
+INPUT .\ts_diff.png
+INPUT .\ts_diff.png
+INPUT .\ts_diff.png
+INPUT .\ts_diff.png
+INPUT .\ts_diff.png
+INPUT .\ts_diff_acf_pacf.png
+INPUT .\ts_diff_acf_pacf.png
+INPUT .\ts_diff_acf_pacf.png
+INPUT .\ts_diff_acf_pacf.png
+INPUT .\ts_diff_acf_pacf.png
+INPUT .\ts_diff_acf_pacf.png
+INPUT .\ts_diff_acf_pacf.png
+INPUT .\ts_diff_2.png
+INPUT .\ts_diff_2.png
+INPUT .\ts_diff_2.png
+INPUT .\ts_diff_2.png
+INPUT .\ts_diff_2.png
+INPUT .\ts_diff_2.png
+INPUT .\ts_diff_2.png
+INPUT .\ts_diff_2_acf_pacf.png
+INPUT .\ts_diff_2_acf_pacf.png
+INPUT .\ts_diff_2_acf_pacf.png
+INPUT .\ts_diff_2_acf_pacf.png
+INPUT .\ts_diff_2_acf_pacf.png
+INPUT .\ts_diff_2_acf_pacf.png
+INPUT .\ts_diff_2_acf_pacf.png
+INPUT .\ts_diff_2_acf_pacf_do_100.png
+INPUT .\ts_diff_2_acf_pacf_do_100.png
+INPUT .\ts_diff_2_acf_pacf_do_100.png
+INPUT .\ts_diff_2_acf_pacf_do_100.png
+INPUT .\ts_diff_2_acf_pacf_do_100.png
+INPUT .\ts_diff_2_acf_pacf_do_100.png
+INPUT .\ts_diff_2_acf_pacf_do_100.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx6.tfm
+INPUT .\napoved_1.png
+INPUT .\napoved_1.png
+INPUT .\napoved_1.png
+INPUT .\napoved_1.png
+INPUT .\napoved_1.png
+INPUT .\napoved_1.png
+INPUT .\napoved_1.png
+INPUT .\napoved_2.png
+INPUT .\napoved_2.png
+INPUT .\napoved_2.png
+INPUT .\napoved_2.png
+INPUT .\napoved_2.png
+INPUT .\napoved_2.png
+INPUT .\napoved_2.png
+INPUT .\napoved_3.png
+INPUT .\napoved_3.png
+INPUT .\napoved_3.png
+INPUT .\napoved_3.png
+INPUT .\napoved_3.png
+INPUT .\napoved_3.png
+INPUT .\napoved_3.png
+INPUT .\napoved_4.png
+INPUT .\napoved_4.png
+INPUT .\napoved_4.png
+INPUT .\napoved_4.png
+INPUT .\napoved_4.png
+INPUT .\napoved_4.png
+INPUT .\napoved_4.png
+INPUT .\napoved_5.png
+INPUT .\napoved_5.png
+INPUT .\napoved_5.png
+INPUT .\napoved_5.png
+INPUT .\napoved_5.png
+INPUT .\napoved_5.png
+INPUT .\napoved_5.png
+INPUT .\napoved_6.png
+INPUT .\napoved_6.png
+INPUT .\napoved_6.png
+INPUT .\napoved_6.png
+INPUT .\napoved_6.png
+INPUT .\napoved_6.png
+INPUT .\napoved_6.png
+INPUT .\porocilo_KS.bbl
+INPUT .\porocilo_KS.bbl
+INPUT porocilo_KS.bbl
+INPUT porocilo_KS.aux
+INPUT .\porocilo_KS.out
+INPUT .\porocilo_KS.out
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmex10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmex10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr17.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr17.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr9.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr9.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy9.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy9.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
