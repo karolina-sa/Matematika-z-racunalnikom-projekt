@@ -258,7 +258,7 @@ pri prvih nekaj urah in v uri tik pred periodo. V modelu bomo zato zagotovo vklj
 
 
 \noindent Izbrala sem nekaj potencialnih modelov SARIMA, kjer sem kot eksogeno spremenljivko podala temperaturo in sevanje.
-Modele sem trenirala na $75~\%$ podatkov, to je od $1.~\text{novembra}~2021$ do $5.~\text{avgusta}~2023$. Na preostanku podatkov 
+Modele sem trenirala na $75~\%$ podatkov, to je od $1.~\text{novembra}~2021$ do $4.~\text{avgusta}~2023$. Na preostanku podatkov 
 pa sem testirala napovedi. 
 Vrednosti kriterija AIC za posamezne modele so prikazane v Tabeli~\ref{Tab:SARIMA_AIC}. 
 Najmanjšo vrednostjo kriterija AIC ima model SARIMA(4, 1, 5)(0, 1, 0)[96]. \\
@@ -331,6 +331,30 @@ V matematičnem jeziku je oblike:
 
 
 \section{Testiranje izbranega modela}
+
+
+\begin{figure}[h!]
+    \centering
+    \caption{Napovedi odjema električne energije za izbrane datume}\par\medskip
+    \label{fig:napovedi_vse}
+    \includegraphics[width=\textwidth]{napovedi_vse.png}
+\end{figure}
+
+\begin{table}[!ht]
+    \centering
+    \caption{Vrednost napake RMSE in MAPE za izbrane datume}\par\medskip
+    \label{Tab:RMSE_MAPE}
+    \begin{tabular}{c|c|c}
+        Datum & RMSE & MAPE \\ \hline
+        5.avg.23 & 156,600 & 1,104 \\ 
+        24.sep.23 & 365,372 & 2,392 \\ 
+        16.nov.23 & 176,901 & 1,199 \\ 
+        30.dec.23 & 224,123 & 1,046 \\ 
+        7.jan.23 & 399,578 & 1,839 \\ 
+        12.feb.23 & 248,981 & 1,287 \\ \hline
+        Povprečje & 261,926 & 1,478 \\ 
+    \end{tabular}
+\end{table}
 
 
 

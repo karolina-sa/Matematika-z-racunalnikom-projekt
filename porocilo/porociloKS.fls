@@ -1,7 +1,7 @@
 PWD c:\Users\Uporabnik\OneDrive\Namizje\SOLA\MAGISTERIJ\MATEMATIKA Z RACUNALNIKOM\Matematika-z-racunalnikom-projekt\porocilo
 INPUT C:\Users\Uporabnik\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Uporabnik\OneDrive\Namizje\SOLA\MAGISTERIJ\MATEMATIKA Z RACUNALNIKOM\Matematika-z-racunalnikom-projekt\porocilo\porocilo.tex
-OUTPUT porocilo.log
+INPUT c:\Users\Uporabnik\OneDrive\Namizje\SOLA\MAGISTERIJ\MATEMATIKA Z RACUNALNIKOM\Matematika-z-racunalnikom-projekt\porocilo\porociloKS.tex
+OUTPUT porociloKS.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
@@ -152,10 +152,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\porocilo.aux
-INPUT .\porocilo.aux
-INPUT porocilo.aux
-OUTPUT porocilo.aux
+INPUT .\porociloKS.aux
+INPUT .\porociloKS.aux
+INPUT porociloKS.aux
+OUTPUT porociloKS.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -164,14 +164,14 @@ INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT .\porocilo.out
-INPUT .\porocilo.out
-INPUT porocilo.out
-INPUT porocilo.out
-OUTPUT porocilo.pdf
-INPUT .\porocilo.out
-INPUT .\porocilo.out
-OUTPUT porocilo.out
+INPUT .\porociloKS.out
+INPUT .\porociloKS.out
+INPUT porociloKS.out
+INPUT porociloKS.out
+OUTPUT porociloKS.pdf
+INPUT .\porociloKS.out
+INPUT .\porociloKS.out
+OUTPUT porociloKS.out
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
@@ -328,12 +328,19 @@ INPUT .\ts_diff_2_acf_pacf_do_100.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx6.tfm
-INPUT .\porocilo.bbl
-INPUT .\porocilo.bbl
-INPUT porocilo.bbl
-INPUT porocilo.aux
-INPUT .\porocilo.out
-INPUT .\porocilo.out
+INPUT .\napovedi_vse.png
+INPUT .\napovedi_vse.png
+INPUT .\napovedi_vse.png
+INPUT .\napovedi_vse.png
+INPUT .\napovedi_vse.png
+INPUT .\napovedi_vse.png
+INPUT .\napovedi_vse.png
+INPUT .\porociloKS.bbl
+INPUT .\porociloKS.bbl
+INPUT porociloKS.bbl
+INPUT porociloKS.aux
+INPUT .\porociloKS.out
+INPUT .\porociloKS.out
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
