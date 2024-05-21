@@ -14,6 +14,8 @@
 \usepackage{makecell}
 \usepackage{hyperref}
 
+\usepackage[caption=false]{subfig}
+
 \usepackage{geometry}
 \geometry{
  a4paper,
@@ -333,12 +335,44 @@ V matematičnem jeziku je oblike:
 \section{Testiranje izbranega modela}
 
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \caption{Napovedi odjema električne energije za izbrane datume}\par\medskip
     \label{fig:napovedi_vse}
-    \includegraphics[width=\textwidth]{napovedi_vse.png}
+    \begin{minipage}[c]{0.48\linewidth}
+        \includegraphics[width=\linewidth]{napoved_1.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{0.48\linewidth}
+        \includegraphics[width=\linewidth]{napoved_2.png}
+    \end{minipage}
 \end{figure}
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}[c]{0.48\linewidth}
+        \includegraphics[width=\linewidth]{napoved_3.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{0.48\linewidth}
+        \includegraphics[width=\linewidth]{napoved_4.png}
+    \end{minipage}
+\end{figure}
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}[c]{0.48\linewidth}
+        \includegraphics[width=\linewidth]{napoved_5.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{0.48\linewidth}
+        \includegraphics[width=\linewidth]{napoved_6.png}
+    \end{minipage}
+\end{figure}
+
+
+
+
+
+
 
 \begin{table}[!ht]
     \centering
@@ -355,6 +389,8 @@ V matematičnem jeziku je oblike:
         Povprečje & 261,926 & 1,478 \\ 
     \end{tabular}
 \end{table}
+
+
 
 
 
