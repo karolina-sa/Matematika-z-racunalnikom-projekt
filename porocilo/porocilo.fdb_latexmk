@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex porocilo_KS"] 1716240291 "porocilo_KS.aux" "porocilo_KS.bbl" "porocilo_KS" 1716240366 0
+["bibtex porocilo"] 1716294388 "porocilo.aux" "porocilo.bbl" "porocilo" 1716295501 0
   "./literatura.bib" 1716238558 709 9bc3ba67dcc1ef81e33dcd1d0cf45a40 ""
   "C:/Program Files/MiKTeX/bibtex/bst/bibtex/abbrv.bst" 1291868336 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "porocilo_KS.aux" 1716240365 5092 60d61384af8df73fc2fedcbad96163e5 "pdflatex"
+  "porocilo.aux" 1716295499 6537 1ed2168656f8e7e786125699c76fab76 "pdflatex"
   (generated)
-  "porocilo_KS.bbl"
-  "porocilo_KS.blg"
+  "porocilo.bbl"
+  "porocilo.blg"
   (rewritten before read)
-["pdflatex"] 1716240362 "c:/Users/Uporabnik/OneDrive/Namizje/SOLA/MAGISTERIJ/MATEMATIKA Z RACUNALNIKOM/Matematika-z-racunalnikom-projekt/porocilo/porocilo_KS.tex" "porocilo_KS.pdf" "porocilo_KS" 1716240366 0
+["pdflatex"] 1716295496 "c:/Users/Uporabnik/OneDrive/Namizje/SOLA/MAGISTERIJ/MATEMATIKA Z RACUNALNIKOM/Matematika-z-racunalnikom-projekt/porocilo/porocilo.tex" "porocilo.pdf" "porocilo" 1716295501 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256933040 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc" 1256933040 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc" 1256933040 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -45,6 +45,9 @@
   "C:/Program Files/MiKTeX/fonts/tfm/public/lm/lmsy6.tfm" 1256933040 1300 b0605d44c16c22d99dc001808e4f24ea ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/lm/lmsy8.tfm" 1256933040 1304 cdc9a17df9ef0d2dc320eff37bbab1c4 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/lm/lmsy9.tfm" 1256933040 1300 ca37bc0213808d24f74bf4d32f81f80d ""
+  "C:/Program Files/MiKTeX/fonts/tfm/public/lm/rm-lmbx10.tfm" 1256933040 11880 35fcf136a2198418dfc53c83e9e2a07f ""
+  "C:/Program Files/MiKTeX/fonts/tfm/public/lm/rm-lmbx6.tfm" 1256933040 11852 eda7061aa4cc8552ba736dae866e4460 ""
+  "C:/Program Files/MiKTeX/fonts/tfm/public/lm/rm-lmbx8.tfm" 1256933040 11868 731e03b24d399279cf9609d002110394 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/lm/rm-lmr10.tfm" 1256933040 11868 4f81e9b6033c032bdaf9884f4d7ef412 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/lm/rm-lmr12.tfm" 1256933040 11888 6841b91e46b65cf41a49b160e6e74130 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/lm/rm-lmr5.tfm" 1256933040 11804 aefb10c002e6492c25236524a447f969 ""
@@ -152,24 +155,25 @@
   "C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576437552 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1686255640 12691 ddae4e0162a664f166015d992388b742 ""
-  "c:/Users/Uporabnik/OneDrive/Namizje/SOLA/MAGISTERIJ/MATEMATIKA Z RACUNALNIKOM/Matematika-z-racunalnikom-projekt/porocilo/porocilo_KS.tex" 1716240361 11539 793530c076ffefc79972c526b185b97f ""
+  "c:/Users/Uporabnik/OneDrive/Namizje/SOLA/MAGISTERIJ/MATEMATIKA Z RACUNALNIKOM/Matematika-z-racunalnikom-projekt/porocilo/porocilo.tex" 1716295495 16142 0e572bf6d6e6c520a5b3342d84e3e62d ""
   "log_returns.png" 1716232018 121635 c83d3017aca9e29e3bc303cdc5fba656 ""
   "log_returns_acf_pacf.png" 1716235972 62935 6a7424a87287bf75a54e9be1c4898dfb ""
   "odjem_EE.png" 1716222363 244497 6196d2ddaaa11fd6a4e399728e7d7e18 ""
   "odjem_teden.png" 1716225774 161668 03aede6e6207b9e3352d1d57a807819c ""
-  "porocilo_KS.aux" 1716240365 5092 60d61384af8df73fc2fedcbad96163e5 "pdflatex"
-  "porocilo_KS.bbl" 1716240292 335 7450d339421401a0d1b6e3366fd466bc "bibtex porocilo_KS"
-  "porocilo_KS.out" 1716240365 1299 ff55454b4f22cedd8d8e68ee19b4088b "pdflatex"
-  "porocilo_KS.tex" 1716240361 11539 793530c076ffefc79972c526b185b97f ""
+  "porocilo.aux" 1716295499 6537 1ed2168656f8e7e786125699c76fab76 "pdflatex"
+  "porocilo.bbl" 1716294388 335 7450d339421401a0d1b6e3366fd466bc "bibtex porocilo"
+  "porocilo.out" 1716295499 2288 df7f18055d76aae8db8e65ea6f233bfb "pdflatex"
+  "porocilo.tex" 1716295495 16142 0e572bf6d6e6c520a5b3342d84e3e62d ""
   "tabela.png" 1712254479 102680 4a8d79b698f72d8899c1745df8a1f609 ""
+  "temp_sevanje.png" 1716286809 676193 fc3b410fe0b42d729b96e91359468f5a ""
   "ts_diff.png" 1716237213 74689 abf172c48f85f1103a5f117b079e3af5 ""
   "ts_diff_2.png" 1716237464 55001 ae20ce7bbea786302a84ef2f485d8c1b ""
   "ts_diff_2_acf_pacf.png" 1716237477 38375 b8e6847b599e79839c209b5ed6066674 ""
   "ts_diff_2_acf_pacf_do_100.png" 1716239043 36006 cd82c6021d9d9b85586304e2c66dd95f ""
   "ts_diff_acf_pacf.png" 1716237317 47219 2e8597662856075753d55692ee5e0481 ""
   (generated)
-  "porocilo_KS.aux"
-  "porocilo_KS.log"
-  "porocilo_KS.out"
-  "porocilo_KS.pdf"
+  "porocilo.aux"
+  "porocilo.log"
+  "porocilo.out"
+  "porocilo.pdf"
   (rewritten before read)

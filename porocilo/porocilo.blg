@@ -1,13 +1,13 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: porocilo_KS.aux
+The top-level auxiliary file: porocilo.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: abbrv.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: literatura.bib
 You've used 2 entries,
             2118 wiz_defined-function locations,
-            508 strings with 3916 characters,
+            508 strings with 3910 characters,
 and the built_in function-call counts, 432 in all, are:
 = -- 40
 > -- 14
