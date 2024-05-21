@@ -331,9 +331,13 @@ V matematičnem jeziku je oblike:
 % =======================================================================================================================
 % =======================================================================================================================
 
+\pagebreak
 
-\section{Testiranje izbranega modela}
+\section{Testiranje izbranega modela SARIMA-GARCH}
 
+Izbran model SARIMA-GARCH uporabimo za napovedovanje odjema električne energije za različne dni v obdobju testnem obdobju
+(od $5.~\text{avgusta}~2023$ do $12.~\text{februarja}~2024$). Izbrala sem si $6$ različnih dni, narisala njihove napovedi ter
+jih prikazala na Sliki~\ref{fig:napovedi_vse}.
 
 \begin{figure}[!ht]
     \centering
@@ -367,6 +371,20 @@ V matematičnem jeziku je oblike:
         \includegraphics[width=\linewidth]{napoved_6.png}
     \end{minipage}
 \end{figure}
+
+\noindent Poglejmo si napaki RMSE (ang. \emph{Root-mean-square deviation}) in 
+MAPE (ang. \emph{Mean absolute percentage error}), ki ju izračunamo po formulah:
+
+
+
+$$
+RMSE = \sqrt{\frac{1}{96}\sum_{t=1}^{96}{(W_t-\hat{W_t})^2}} \quad \textrm{in} \quad
+MAPE = \frac{1}{96}\sum_{t=1}^{96}{\frac{W_t-\hat{W_t}}{W_t}} \,,
+$$
+
+\noindent kjer je $W_t$ dejanska vrednost odjema, $\hat{W_t}$ pa napovedana. 
+Vrednosti napak RMSE in MAPE za izbrane napovedi so zapisane v Tabeli~\ref{Tab:RMSE_MAPE} in 
+v povprečju znašajo RMSE $261{,}926$, MAPE pa $1{,}478~\%$.
 
 
 
