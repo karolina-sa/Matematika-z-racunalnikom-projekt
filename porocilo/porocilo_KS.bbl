@@ -1,9 +1,20 @@
 \begin{thebibliography}{1}
 
+\bibitem{Brilej_2021}
+K.~Brilej.
+\newblock {\em Napovedovanje cen in povpraševanja po električni energiji:
+  magistrsko delo}.
+\newblock PhD thesis, 2021.
+
 \bibitem{ArimaGarch}
 T.~Dierckx.
 \newblock {ARIMA-GARCH forecasting with Python}.
 \newblock {\em Medium}, Sept. 2020.
+
+\bibitem{Stacionarity_V}
+V.~K. G.
+\newblock {Statistical Tests to Check Stationarity in Time Series}.
+\newblock {\em Medium}, May 2024.
 
 \bibitem{SARIMA_param}
 B.~Köseoğlu.

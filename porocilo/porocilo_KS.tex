@@ -41,15 +41,44 @@
 \section{Uvod}
 
 Cilj projektne naloge je sestaviti model, ki bo napovedal odjem električne energije 
-za celotni naslenji dan (za naslednjih $24$ ur). 
+za celotni naslenji dan (za naslednjih $24$ ur). \\
 
-Celotna analiza je izvedena v programskem jeziku \href{https://www.python.org/}{Python}.
+% =======================================================================================================================
+
+\subsection{Teoretična osnova}
+
+\noindent V projektni nalogi se bomo ukvarjali s časovno vrsto $\{X_t\}_t$, torej nekim zaporedjem podatkov. 
+Celotna analiza in napovedovanje 
+sta izvedena v programskem jeziku \href{https://www.python.org/}{Python}. Zaradi lažjega razumevanja vsebine si najprej poglejmo
+nekaj pomembnih konceptov v okviru časovnih vrst. \\
+
+\noindent Pomemben cilj pri sestavljanju modelov je transformacija časovne vrste v stacionarno.
+Časovna vrsta je stacionarna, če ima podobne statistične značilnosti kot vsaka časovno zamaknjena časovna vrsta. 
+Ne smemo torej imeti trenda ali sezonskosti.
+Stacionarno lahko preverimo z različnimi formalnimi testi, kot so na primer Augmented Dickey-Fuller (ADF) test,
+Kwiatkowski-Phillips-Schmidt-Shin (KPSS) test in Phillips-Perron test. \cite{Stacionarity_V,Brilej_2021} 
+Pogosti pristopi, da pridemo do stacionarne časovne vrste so logaritmiranje časovne vrste, diferenciranje,
+sezonsko diferenciranje , \dots Pri tem si pogosto pomagamo z obravno 
+avtokorelacijske funkcije (ACF) in parcialno avtokorelacijske funkcije (PACF). 
+Ti funkciji sta pomembni, saj opisujeta korelacijo med podatkovnimi točkami v časovni vrsti in prejšnjimi vrednostmi 
+časovne vrste (za različne dolžine zamika). Iz teh funkciji lahko razberemo tudi, če imamo sezonsko komponento.
+ACF meri linearno razmerje med opazovanjem in njegovimi prejšnjimi opazovanji pri različnih zamikih. 
+PACF pa neposredno meri linearno razmerje med opazovanjem in njegovimi prejšnjimi opazovanji ob določenem zamiku, 
+pri čemer so izključeni prispevki iz vmesnih zamikov. \\
+
+\noindent Ker bomo opravka s časovno vrsto, katere lastnosti se s časom ne spreminjajo, bomo
+obravnavali model ARMA (ang. \emph{autoregressive moving average process}), ki velja za enega najbolj zanih modelov, ki predpostavlja stacionarno vrsto. 
+
+
+
+\noindent Ukvarjali se bomo z modeli družine ARMA in GARCH. 
 
 
 
 % =======================================================================================================================
 % =======================================================================================================================
 
+\pagebreak
 
 \section{Osnovna analiza časovne vrste}
 
@@ -59,9 +88,9 @@ Celotna analiza je izvedena v programskem jeziku \href{https://www.python.org/}{
     \item  \texttt{DateTimeStartCET}: srednjeevropski čas,
     \item  \texttt{Odjem ACT}: neto odjem električne energije v kWh,
     \item  \texttt{Temperatura ACT}: dejanska temperatura, 
-    \item  \texttt{Temperatura FC}: napovedana temperatura,
+    \item  \texttt{Temperatura FC}: s strani GEN-I napovedana temperatura,
     \item  \texttt{Sevanje ACT}: dejansko sevanje in
-    \item  \texttt{Sevanje FC}: napovedano sevanje. 
+    \item  \texttt{Sevanje FC}: s strani GEN-I napovedano sevanje. 
 \end{itemize}
 
 \begin{figure}[h!]
@@ -71,8 +100,8 @@ Celotna analiza je izvedena v programskem jeziku \href{https://www.python.org/}{
 \end{figure}
 
 \noindent V analizi sem uporabljala vse stolpce, razen stolpca \texttt{DateTimeStartUTC}, saj je v 
-okviru časa bolj relavanten stolpec \texttt{DateTimeStartCET}. Podatki so podani za odboje od $1.~\text{novembra}~2021$ do $12.~\text{februarja}~2024$,
-na vsakih $15$ minut. Tabela ima torej vsega skupaj $80064$ vrstic.
+okviru časa bolj relavanten stolpec \texttt{DateTimeStartCET}. Podatki so podani za obdobje od $1.~\text{novembra}~2021$ do $12.~\text{februarja}~2024$,
+na vsakih $15$ minut. Tabela ima vsega skupaj $80064$ vrstic.
 
 % =======================================================================================================================
 
@@ -80,8 +109,8 @@ na vsakih $15$ minut. Tabela ima torej vsega skupaj $80064$ vrstic.
 
 \noindent Slika~\ref{fig:odjem_EE} prikazuje odjem električne energije za obdobje od 
 $1.~\text{novembra}~2021$ do $12.~\text{februarja}~2024$. 
-Opaznoa je sezonskost; odjem je znatno večji jeseni in pozimi, zaradi povečane uporabe energije za ogrevanje in 
-razsvetljevo, saj se število ur dnevne svetlobe podaljša. 
+Opazna je sezonskost; odjem je znatno večji jeseni in pozimi, zaradi povečane uporabe energije za ogrevanje in 
+razsvetljevo (saj se število ur dnevne svetlobe podaljša). \\
 
 \begin{figure}[h!]
     \centering
@@ -92,7 +121,7 @@ razsvetljevo, saj se število ur dnevne svetlobe podaljša.
 
 \noindent S Tabele~\ref{Tab:opisne_statistike} preberemo, da je povprečna poraba električne energije gospodinjskih odjemalcev
 okrog $12240{,}53 $ MWh, minimalna dosežena vrednost je $3629{,}32$ MWh, maksimalna pa $28736{,}80$ MWh. Vrednosti varirajo
-okrog $4167{,}98$ MWh. \\
+za okrog $4167{,}98$ MWh. \\
 
 \begin{table}[!h]
     \centering
@@ -104,9 +133,12 @@ okrog $4167{,}98$ MWh. \\
     \end{tabular}
 \end{table}
 
-\noindent Odjem električne energije je med tednom najmanjši ponoči in se veča do viška okrog 18 ure. 
-V soboto in nedeljo pa je prvi višek porabe dopoldne, drugi pa okrog 18 ure, kar je opazno s Slike~\ref{fig:odjem_teden}, ki prikazuje odjem 
-električne energije v drugem tednu septembra 2023. Imamo torej tudi sezonskost na dnevni ravni.
+\noindent Odjem električne energije si poglejmo še na ravni tedna. Opazimo, da 
+je od ponedeljka do petka odjem najmanjši ponoči in se veča vse do viška okrog 18 ure, nato pa hitro pade. 
+V soboto in nedeljo pa je prvi višek porabe dopoldne, drugi pa okrog 18 ure, kar je opazno s Slike~\ref{fig:odjem_teden}, 
+ki prikazuje odjem 
+električne energije v drugem tednu septembra 2023. 
+Imamo torej sezonskost na dnevni ravni.
 
 \begin{figure}[h!]
     \centering
@@ -121,8 +153,10 @@ električne energije v drugem tednu septembra 2023. Imamo torej tudi sezonskost 
 
 \subsection{Povezava med odjemom in temperaturo ter sevanjem}
 
-\noindent Na odjem električne energije ključno vpliva del leta in s tem temperature, kar je razvidno tudi iz Slike~\ref{fig:temp_sevanje}.  
-Povezave med sevanjem in odjemom s Slike~\ref{fig:temp_sevanje} ni opaziti; sklep da zato, ker 
+\noindent Smislno se zdi, da obstaja povezava med odjemom električne energije ter
+temperaturo in sevanjem. S pomočjo Slike~\ref{fig:temp_sevanje} ugotovimo, da
+nižja temperatura pomeni višji odjem in obratno. 
+Povezave med sevanjem in odjemom PA ni opaziti; sklepam da zato, ker 
 ne analiziramo samooskrbnih odjemalcev (tisti ki imajo svojo sončno elektrarno). 
 
 \begin{figure}[h!]
@@ -132,8 +166,8 @@ ne analiziramo samooskrbnih odjemalcev (tisti ki imajo svojo sončno elektrarno)
     \includegraphics[width=0.9\textwidth]{temp_sevanje.png}
 \end{figure}
 
-\noindent V nadaljevanju bomo v upanju boljše napovedi v naše modele vključili tudi temperaturo in sevanje, 
-kot eksogeni spremenljivki.
+\noindent V nadaljevanju bomo v upanju boljše napovedi v naše modele kot 
+eksogeni spremenljivki vključili tudi temperaturo in sevanje. 
 
 
 % =======================================================================================================================
@@ -147,9 +181,13 @@ kot eksogeni spremenljivki.
 ARIMA je model, ki pri napovedovanju zajame vzorce, trende in sezonskost podatkov s kombinacijo preteklih 
 vrednosti, razlik in napak. Ker pa imamo v podatkih očitno sezonskost, lahko ARIMO nadgradimo v SARIMO, ki dodatno
 upošteva še sezonske vzorce. Ta družina modelov ima težavo predvsem pri napovedih, ko ima časovna vrsta 
-skozi čas spremembo variance. Da bo naše napovedovanje bolj učinkovito, bomo naš SARIMA nadgradili v 
+skozi čas spremembo variance. Da bo naše napovedovanje bolj učinkovito, bomo SARIMA model nadgradili v 
 model SARIMA-GARCH, saj se model GARCH uporablja ravno za modeliranje združevanja volatilnosti 
-v podatke časovnih vrst.~\cite{ArimaGarch}
+v podatke časovnih vrst.~\cite{ArimaGarch} \\
+
+\noindent Naš model bo oblike: \\
+
+TUKAJ BO FORMULA 
 
 % =======================================================================================================================
 
@@ -170,17 +208,17 @@ Slika~\ref{fig:log_returns}.
     \includegraphics[width=0.9\textwidth]{log_returns.png}
 \end{figure}
 
-\noindent Slika~\ref{fig:log_returns_acf_pacf} prikazuje 
-ACF (vzorčno avtokorelacijo) in PACF (vzorčna parcialna avtokorelacija) logaritmičnih donosov do odloga $1000$ (to je
-malo manj kot dva tedna). Z grafov je očitno, da časovna vrsta ni stacionarna. Opazna je sezonska komponentna, in sicer $96$, 
-kar je ravno en dan \footnote{Podatki so podani na $15$ minut in $15\,\text{min} \cdot 96 = 1440\,\text{min}$, kar je ravno en dan.}.
-
 \begin{figure}[h!]
     \centering
     \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste logaritmičnih donosov}\par\medskip
     \label{fig:log_returns_acf_pacf}
     \includegraphics[width=0.9\textwidth]{log_returns_acf_pacf.png}
 \end{figure}
+
+\noindent Slika~\ref{fig:log_returns_acf_pacf} prikazuje 
+ACF (vzorčno avtokorelacijo) in PACF (vzorčna parcialna avtokorelacija) logaritmičnih donosov do odloga $1000$ (to je
+malo manj kot dva tedna). Z grafov je očitno, da časovna vrsta ni stacionarna. Opazna je sezonska komponentna, in sicer $96$, 
+kar je ravno en dan \footnote{Podatki so podani na $15$ minut in $15\,\text{min} \cdot 96 = 1440\,\text{min}$, kar je ravno en dan.}. \\
 
 \noindent Da dosežemo stacionarnost, se je potrebno sezonskosti znebiti, zato bomo podatke \textbf{sezonsko diferencirali}.
 Nova časovna vrsta bo $Z_t = Y_t - Y_{t-96}$. Prikazana je na Slika~\ref{fig:ts_diff}, njeni ACF in PACF pa na Slika~\ref{fig:ts_diff_acf_pacf}.
@@ -217,40 +255,6 @@ Prikazana je na Slika~\ref{fig:ts_diff_2}, njeni ACF in PACF pa na Slika~\ref{fi
     \includegraphics[width=0.9\textwidth]{ts_diff_2_acf_pacf.png}
 \end{figure}
 
-\noindent Dobljena časovna vrsta $X_t$ zgleda stacionarno in tudi formalni testi Augmented Dickey-Fuller (ADF), 
-KPSS in Phillips-Perron potrdijo njeno stacionarnost. Časovna vrsta je torej primerna za izbero parametrov modela
-SARIMA. 
-
-% =======================================================================================================================
-
-\subsection{Identifikacija modela SARIMA}
-
-\noindent Na podlagi ACF in PACF (Slika~\ref{fig:ts_diff_2_acf_pacf}) stacionarne časovne vrste $X_t$ izberimo parametre 
-modela SARIMA(p, d, q)(P, D, Q)[S]. Kaj sploh predstavljajo ti parametri? Razdelimo jih lahko v dve skupini,
-in sicer v skupino nesezonskih (p, d, q) in sezonskih (P, D, Q, S)~\cite{SARIMA_param}:
-
-\begin{itemize}
-    \item p \dots
-    \item d \dots
-    \item q \dots
-    \item P \dots
-    \item D \dots
-    \item Q \dots
-    \item S \dots
-\end{itemize}
-
-\noindent Ker smo časovno vrsto enkrat sezonsko diferencirali bo $\text{D} = 1$ in ker smo jo enkrat 
-navadno diferencirali bo $\text{d} = 1$. Perioda je enaka $96$, torej je $\text{S} = 96$. \\
-
-\noindent Za določitev sezonskih parametrov P in Q gledamokorelacije pri odlogih, ki so večkratniki periode S. Pri
-PACF visoko korelacijo opazimo predvsem pri $96$ in $192$, nato pa se z vsako dodatno periodo manjša. Parameter P je torej 
-$1$ ali več; predlagala bi $1$, $2$ ali $3$. 
-Pri ACF pa je občutna korelacija zgolj pri $96$, zato vzamemo $\text{Q} = 1$. \\
-
-\noindent Za lažjo določitev nesezonskih parametrov p in q bomo gledali ACF in PACF do prve periode (torej do odloga 96). 
-Slednje je prikazano na Slika~\ref{fig:ts_diff_2_acf_pacf_do_100}. Tako iz PACF, kot tudi iz ACF, je opazna večja korelacija
-pri prvih nekaj urah in v uri tik pred periodo. V modelu bomo zato zagotovo vključili prvih nekaj ur, saj le-te kažejo močan vpliv.
-
 \begin{figure}[h!]
     \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste po prvem nesezonskem diferenciranju, odlogi do 100}\par\medskip
     \centering
@@ -258,10 +262,44 @@ pri prvih nekaj urah in v uri tik pred periodo. V modelu bomo zato zagotovo vklj
     \includegraphics[width=0.9\textwidth]{ts_diff_2_acf_pacf_do_100.png}
 \end{figure}
 
+\noindent Dobljena časovna vrsta $X_t$ na pogladi ACF in PACF (Slika~\ref{fig:ts_diff_2_acf_pacf}) 
+zgleda stacionarno in tudi formalni testi ADF, 
+KPSS in Phillips-Perron potrdijo njeno stacionarnost. 
+Časovna vrsta je torej primerna za izbero parametrov modela SARIMA. 
+
+% =======================================================================================================================
+
+\subsection{Identifikacija modela SARIMA}
+
+\noindent Na podlagi ACF in PACF (Slika~\ref{fig:ts_diff_2_acf_pacf}) stacionarne časovne vrste $X_t$, izberimo parametre 
+modela SARIMA(p, d, q)(P, D, Q)[S]. Parametre lahko razdelimo na nesezonske (p, d, q) in sezonske (P, D, Q, S)~\cite{SARIMA_param}:
+
+\begin{itemize}
+    \item p \dots koliko korakov nazaj bomo gledali (preberemo iz grafa PACF)
+    \item d \dots kolikokrat smo diferencirali 
+    \item q \dots število zgodovinskih napak, ki vplivajo na trenutno vrednost (preberemo iz grafa ACF)
+    \item P \dots red sezonskega AR(P)
+    \item D \dots kolikokrat smo sezonsko diferencirali
+    \item Q \dots red sezonskega MA(Q)
+    \item S \dots perioda
+\end{itemize}
+
+\noindent Ker smo časovno vrsto enkrat sezonsko diferencirali bo $\text{D} = 1$ in ker smo jo enkrat 
+navadno diferencirali bo $\text{d} = 1$. Perioda je enaka $96$, torej je $\text{S} = 96$. \\
+
+\noindent Za določitev sezonskih parametrov P in Q gledamo korelacije pri odlogih, ki so večkratniki periode S. Pri
+PACF visoko korelacijo opazimo predvsem pri $96$ in $192$, nato pa se z vsako dodatno periodo manjša. Parameter P je torej 
+$1$ ali več; predlagala bi $1$, $2$ ali $3$. 
+Pri ACF pa je občutna korelacija zgolj pri $96$, zato izberemo $\text{Q} = 1$. \\
+
+\noindent Za lažjo določitev nesezonskih parametrov p in q bomo gledali ACF in PACF do prve periode (torej do odloga 96). 
+Slednje je prikazano na Slika~\ref{fig:ts_diff_2_acf_pacf_do_100}. Tako iz PACF, kot tudi iz ACF, je opazna večja korelacija
+pri prvih nekaj urah in v uri tik pred periodo. V modelu bomo zato zagotovo vključili prvih nekaj ur, saj le-te kažejo močan vpliv. \\
+
 
 \noindent Izbrala sem nekaj potencialnih modelov SARIMA, kjer sem kot eksogeno spremenljivko podala temperaturo in sevanje.
 Modele sem trenirala na $75~\%$ podatkov, to je od $1.~\text{novembra}~2021$ do $4.~\text{avgusta}~2023$. Na preostanku podatkov 
-pa sem testirala napovedi. 
+pa sem izvajala teste napovedi. 
 Vrednosti kriterija AIC za posamezne modele so prikazane v Tabeli~\ref{Tab:SARIMA_AIC}. 
 Najmanjšo vrednostjo kriterija AIC ima model SARIMA(4, 1, 5)(0, 1, 0)[96]. \\
 
@@ -297,9 +335,9 @@ vendar moj računalnik ni vrnil nobenega rezultata, ker očitno ni dovolj zmoglj
 \subsection{Izbira modela SARIMA-GARCH}
 
 Model GARCH(p, q) bomo konstruirali na rezidualih izbranega modela SARIMA. Preizkusili bomo $6$ kombinacij 
-parametrov p in q, in sicer $(1,1), (1,2), (2,1), (2,2), (1,3)$ ter $(3,1)$. Izbrali bomo model na podlagi
-vrednosti kriterija AIC. 
-
+parametrov p in q, in sicer $(1,1), (1,2), (2,1), (2,2), (1,3)$ ter $(3,1)$. 
+Na podlagi vrednosti kriterija AIC se odločimo za model SARIMA(4, 1, 5)(0, 1, 0)[96]-GARCH(1, 3), saj
+je iz Tabele~\ref{Tab:GARCH_AIC} razvidno, da ima najmanjši AIC. 
 
 \begin{table}[!ht]
     \centering
@@ -317,8 +355,6 @@ vrednosti kriterija AIC.
     \end{tabular}
 \end{table}
 
-\noindent Na podlagi vrednosti kriterija AIC se odločimo za model SARIMA(4, 1, 5)(0, 1, 0)[96]-GARCH(1, 3), saj
-je iz Tabele~\ref{Tab:GARCH_AIC} razvidno, da ima najmanjši AIC. 
 
 % =======================================================================================================================
 
@@ -335,7 +371,7 @@ V matematičnem jeziku je oblike:
 
 \section{Testiranje izbranega modela SARIMA-GARCH}
 
-Izbran model SARIMA-GARCH uporabimo za napovedovanje odjema električne energije za različne dni v obdobju testnem obdobju
+Izbran model SARIMA-GARCH uporabimo za napovedovanje odjema električne energije za različne dni v testnem obdobju
 (od $5.~\text{avgusta}~2023$ do $12.~\text{februarja}~2024$). Izbrala sem si $6$ različnih dni, narisala njihove napovedi ter
 jih prikazala na Sliki~\ref{fig:napovedi_vse}.
 
@@ -372,24 +408,19 @@ jih prikazala na Sliki~\ref{fig:napovedi_vse}.
     \end{minipage}
 \end{figure}
 
-\noindent Poglejmo si napaki RMSE (ang. \emph{Root-mean-square deviation}) in 
+\noindent Prileganje napovedi dejanski vrednosti se zdi zelo dobra, vseeno pa si
+poglejmo napaki RMSE (ang. \emph{Root-mean-square deviation}) in 
 MAPE (ang. \emph{Mean absolute percentage error}), ki ju izračunamo po formulah:
-
-
 
 $$
 RMSE = \sqrt{\frac{1}{96}\sum_{t=1}^{96}{(W_t-\hat{W_t})^2}} \quad \textrm{in} \quad
 MAPE = \frac{1}{96}\sum_{t=1}^{96}{\frac{W_t-\hat{W_t}}{W_t}} \,,
 $$
 
-\noindent kjer je $W_t$ dejanska vrednost odjema, $\hat{W_t}$ pa napovedana. 
-Vrednosti napak RMSE in MAPE za izbrane napovedi so zapisane v Tabeli~\ref{Tab:RMSE_MAPE} in 
-v povprečju znašajo RMSE $261{,}926$, MAPE pa $1{,}478~\%$.
+\noindent kjer je $W_t$ dejanska vrednost odjema, $\hat{W_t}$ pa napovedana. \\
 
-
-
-
-
+\noindent Vrednosti napak RMSE in MAPE za izbrane napovedi so zapisane v Tabeli~\ref{Tab:RMSE_MAPE} in 
+v povprečju znašajo RMSE $261{,}926$, MAPE pa $1{,}478~\%$. \\
 
 
 \begin{table}[!ht]
@@ -409,6 +440,9 @@ v povprečju znašajo RMSE $261{,}926$, MAPE pa $1{,}478~\%$.
 \end{table}
 
 
+\noindent Napaki RMSE in MAPE sem izbračunala še posebej za zadnji teden septembra 2023 in 
+prvi teden februarja 2024. Rezultati so prikazani v Tabeli 
+
 
 
 
@@ -416,6 +450,7 @@ v povprečju znašajo RMSE $261{,}926$, MAPE pa $1{,}478~\%$.
 % =======================================================================================================================
 % =======================================================================================================================
 
+\pagebreak
 
 \section{Zaključek}
 

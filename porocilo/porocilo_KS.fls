@@ -220,6 +220,13 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
+INPUT C:\Users\Uporabnik\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
@@ -237,18 +244,14 @@ INPUT .\tabela.png
 INPUT .\tabela.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
-INPUT C:\Users\Uporabnik\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
+INPUT .\odjem_EE.png
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
-INPUT .\odjem_EE.png
 INPUT .\odjem_teden.png
 INPUT .\odjem_teden.png
 INPUT .\odjem_teden.png
@@ -256,7 +259,6 @@ INPUT .\odjem_teden.png
 INPUT .\odjem_teden.png
 INPUT .\odjem_teden.png
 INPUT .\odjem_teden.png
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT .\temp_sevanje.png
 INPUT .\temp_sevanje.png
 INPUT .\temp_sevanje.png
@@ -265,7 +267,6 @@ INPUT .\temp_sevanje.png
 INPUT .\temp_sevanje.png
 INPUT .\temp_sevanje.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT .\log_returns.png
 INPUT .\log_returns.png
 INPUT .\log_returns.png
@@ -273,6 +274,13 @@ INPUT .\log_returns.png
 INPUT .\log_returns.png
 INPUT .\log_returns.png
 INPUT .\log_returns.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
+INPUT .\log_returns_acf_pacf.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr9.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr9.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
@@ -286,14 +294,6 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
-INPUT .\log_returns_acf_pacf.png
-INPUT .\log_returns_acf_pacf.png
-INPUT .\log_returns_acf_pacf.png
-INPUT .\log_returns_acf_pacf.png
-INPUT .\log_returns_acf_pacf.png
-INPUT .\log_returns_acf_pacf.png
-INPUT .\log_returns_acf_pacf.png
 INPUT .\ts_diff.png
 INPUT .\ts_diff.png
 INPUT .\ts_diff.png
