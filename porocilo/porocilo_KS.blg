@@ -6,45 +6,45 @@ The style file: abbrv.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: literatura.bib
 Warning--empty school in Brilej_2021
-You've used 4 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            517 strings with 4131 characters,
-and the built_in function-call counts, 836 in all, are:
-= -- 80
-> -- 28
+            523 strings with 4276 characters,
+and the built_in function-call counts, 1042 in all, are:
+= -- 100
+> -- 35
 < -- 0
-+ -- 12
-- -- 8
-* -- 43
-:= -- 165
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 15
++ -- 15
+- -- 10
+* -- 53
+:= -- 204
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 39
-empty$ -- 66
-format.name$ -- 8
-if$ -- 161
+cite$ -- 6
+duplicate$ -- 49
+empty$ -- 83
+format.name$ -- 10
+if$ -- 202
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 3
-newline$ -- 23
-num.names$ -- 8
-pop$ -- 16
+int.to.str$ -- 5
+missing$ -- 4
+newline$ -- 28
+num.names$ -- 10
+pop$ -- 20
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 15
 quote$ -- 0
-skip$ -- 27
+skip$ -- 34
 stack$ -- 0
-substring$ -- 20
-swap$ -- 4
+substring$ -- 25
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 20
 warning$ -- 1
-while$ -- 8
-width$ -- 5
-write$ -- 42
+while$ -- 10
+width$ -- 6
+write$ -- 52
 (There was 1 warning)

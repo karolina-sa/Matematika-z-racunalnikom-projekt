@@ -139,6 +139,8 @@ INPUT C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\
 INPUT C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex\latex\tools\bm.sty
+INPUT C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex\latex\tools\bm.sty
 INPUT C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex\latex\subfig\subfig.sty
 INPUT C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex\latex\subfig\subfig.sty
 INPUT C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
@@ -213,6 +215,15 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx6.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmib10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmib10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmib7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmbsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmbsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmbsy7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
@@ -220,13 +231,20 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmib10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmbsy10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT C:\Users\Uporabnik\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
@@ -242,8 +260,6 @@ INPUT .\tabela.png
 INPUT .\tabela.png
 INPUT .\tabela.png
 INPUT .\tabela.png
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT .\odjem_EE.png
 INPUT .\odjem_EE.png
 INPUT .\odjem_EE.png
@@ -266,7 +282,6 @@ INPUT .\temp_sevanje.png
 INPUT .\temp_sevanje.png
 INPUT .\temp_sevanje.png
 INPUT .\temp_sevanje.png
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT .\log_returns.png
 INPUT .\log_returns.png
 INPUT .\log_returns.png
@@ -292,8 +307,13 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmib10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmib5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmbsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmbsy5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT .\ts_diff.png
 INPUT .\ts_diff.png
 INPUT .\ts_diff.png
@@ -329,9 +349,6 @@ INPUT .\ts_diff_2_acf_pacf_do_100.png
 INPUT .\ts_diff_2_acf_pacf_do_100.png
 INPUT .\ts_diff_2_acf_pacf_do_100.png
 INPUT .\ts_diff_2_acf_pacf_do_100.png
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx6.tfm
 INPUT .\napoved_1.png
 INPUT .\napoved_1.png
 INPUT .\napoved_1.png

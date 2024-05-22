@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{ARMA_ARIMA_SARIMA_SARIMAX}
+B.~Artley.
+\newblock {Time Series Forecasting with ARIMA , SARIMA and SARIMAX}.
+\newblock {\em Towards Data Science}, Apr. 2022.
+
 \bibitem{Brilej_2021}
 K.~Brilej.
 \newblock {\em Napovedovanje cen in povpraševanja po električni energiji:

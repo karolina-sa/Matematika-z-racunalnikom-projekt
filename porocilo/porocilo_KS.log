@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.28)  22 MAY 2024 12:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.28)  22 MAY 2024 21:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -334,6 +334,15 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip57
+) (C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/lmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
  (C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
@@ -379,7 +388,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen177
 \Gm@dimlist=\toks30
  (C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 29.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 31.
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -389,24 +398,24 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (porocilo_KS.aux)
 \openout1 = `porocilo_KS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count301
@@ -426,7 +435,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 29.
+Package hyperref Info: Link coloring OFF on input line 31.
  (porocilo_KS.out) (porocilo_KS.out)
 \@outlinefile=\write3
 \openout3 = `porocilo_KS.out'.
@@ -469,256 +478,275 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 36.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 38.
 (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 36.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 38.
  (C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 36.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 38.
  (C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 36.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 38.
  (C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 36.
+(Font)              <12> on input line 38.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 36.
+(Font)              <8> on input line 38.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 36.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+(Font)              <6> on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
+
+ []
+
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 44.
+(Font)              <10.95> on input line 52.
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--54
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--68
+Underfull \hbox (badness 10000) in paragraph at lines 62--75
 
  []
 
 [1
 
 {C:/Users/Uporabnik/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 87.
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
+
+ []
+
+[2{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 170.
  (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 87.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 170.
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<tabela.png, id=75, 1120.9378pt x 518.6878pt>
+<tabela.png, id=112, 1120.9378pt x 518.6878pt>
 File: tabela.png Graphic file (type png)
 <use tabela.png>
-Package pdftex.def Info: tabela.png  used on input line 99.
+Package pdftex.def Info: tabela.png  used on input line 182.
 (pdftex.def)             Requested size: 435.32419pt x 201.44057pt.
 
-Overfull \hbox (23.53043pt too wide) in paragraph at lines 102--105
+Overfull \hbox (23.53043pt too wide) in paragraph at lines 185--188
 \T1/lmr/m/n/10.95 van-ten stol-pec \T1/lmtt/m/n/10.95 DateTimeStartCET\T1/lmr/m/n/10.95 . Po-datki so po-dani za ob-do-bje od $\OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 : [] \OT1/lmr/m/n/10.95 2021$ \T1/lmr/m/n/10.95 do $\OT1/lmr/m/n/10.95 12\OML/lmm/m/it/10.95 : [] \OT1/lmr/m/n/10.95 2024$\T1/lmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--114
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
  []
 
-<odjem_EE.png, id=78, 1185.228pt x 390.9807pt>
+<odjem_EE.png, id=115, 1185.228pt x 390.9807pt>
 File: odjem_EE.png Graphic file (type png)
 <use odjem_EE.png>
-Package pdftex.def Info: odjem_EE.png  used on input line 119.
+Package pdftex.def Info: odjem_EE.png  used on input line 202.
 (pdftex.def)             Requested size: 435.32419pt x 143.60463pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+Underfull \hbox (badness 10000) in paragraph at lines 205--208
 
  []
 
-[2{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./tabela.png>]
-<odjem_teden.png, id=91, 1465.6356pt x 396.0396pt>
+[3{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./tabela.png>]
+<odjem_teden.png, id=128, 1465.6356pt x 396.0396pt>
 File: odjem_teden.png Graphic file (type png)
 <use odjem_teden.png>
-Package pdftex.def Info: odjem_teden.png  used on input line 147.
+Package pdftex.def Info: odjem_teden.png  used on input line 230.
 (pdftex.def)             Requested size: 435.32419pt x 117.62834pt.
-<temp_sevanje.png, id=93, 1433.8368pt x 422.0568pt>
+<temp_sevanje.png, id=130, 1433.8368pt x 422.0568pt>
 File: temp_sevanje.png Graphic file (type png)
 <use temp_sevanje.png>
-Package pdftex.def Info: temp_sevanje.png  used on input line 166.
+Package pdftex.def Info: temp_sevanje.png  used on input line 249.
 (pdftex.def)             Requested size: 435.32419pt x 128.13786pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--187
+Underfull \hbox (badness 10000) in paragraph at lines 264--271
 
  []
 
-[3 <./odjem_EE.png> <./odjem_teden.png> <./temp_sevanje.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+[4 <./odjem_EE.png> <./odjem_teden.png> <./temp_sevanje.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--198
-
- []
-
-<log_returns.png, id=106, 1176.5556pt x 393.1488pt>
+<log_returns.png, id=144, 1176.5556pt x 393.1488pt>
 File: log_returns.png Graphic file (type png)
 <use log_returns.png>
-Package pdftex.def Info: log_returns.png  used on input line 208.
+Package pdftex.def Info: log_returns.png  used on input line 289.
 (pdftex.def)             Requested size: 435.32419pt x 145.46277pt.
-<log_returns_acf_pacf.png, id=107, 1183.0599pt x 393.1488pt>
+<log_returns_acf_pacf.png, id=145, 1183.0599pt x 393.1488pt>
 File: log_returns_acf_pacf.png Graphic file (type png)
 <use log_returns_acf_pacf.png>
-Package pdftex.def Info: log_returns_acf_pacf.png  used on input line 215.
+Package pdftex.def Info: log_returns_acf_pacf.png  used on input line 296.
 (pdftex.def)             Requested size: 435.32419pt x 144.66492pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 221.
+(Font)              <9> on input line 302.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 221.
+(Font)              <5> on input line 302.
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--222
+Underfull \hbox (badness 10000) in paragraph at lines 299--303
 
  []
 
-[4{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc} <./log_returns.png> <./log_returns_acf_pacf.png>]
-<ts_diff.png, id=126, 1161.3789pt x 390.9807pt>
+[5 <./log_returns.png> <./log_returns_acf_pacf.png>]
+<ts_diff.png, id=166, 1161.3789pt x 390.9807pt>
 File: ts_diff.png Graphic file (type png)
 <use ts_diff.png>
-Package pdftex.def Info: ts_diff.png  used on input line 230.
+Package pdftex.def Info: ts_diff.png  used on input line 311.
 (pdftex.def)             Requested size: 435.32419pt x 146.55177pt.
-<ts_diff_acf_pacf.png, id=127, 1183.0599pt x 393.1488pt>
+<ts_diff_acf_pacf.png, id=167, 1183.0599pt x 393.1488pt>
 File: ts_diff_acf_pacf.png Graphic file (type png)
 <use ts_diff_acf_pacf.png>
-Package pdftex.def Info: ts_diff_acf_pacf.png  used on input line 237.
+Package pdftex.def Info: ts_diff_acf_pacf.png  used on input line 318.
 (pdftex.def)             Requested size: 435.32419pt x 144.66492pt.
-<ts_diff_2.png, id=130, 1162.1016pt x 390.9807pt>
+<ts_diff_2.png, id=170, 1162.1016pt x 390.9807pt>
 File: ts_diff_2.png Graphic file (type png)
 <use ts_diff_2.png>
-Package pdftex.def Info: ts_diff_2.png  used on input line 248.
+Package pdftex.def Info: ts_diff_2.png  used on input line 329.
 (pdftex.def)             Requested size: 435.32419pt x 146.46228pt.
-<ts_diff_2_acf_pacf.png, id=131, 1183.0599pt x 393.1488pt>
+<ts_diff_2_acf_pacf.png, id=171, 1183.0599pt x 393.1488pt>
 File: ts_diff_2_acf_pacf.png Graphic file (type png)
 <use ts_diff_2_acf_pacf.png>
-Package pdftex.def Info: ts_diff_2_acf_pacf.png  used on input line 255.
+Package pdftex.def Info: ts_diff_2_acf_pacf.png  used on input line 336.
 (pdftex.def)             Requested size: 435.32419pt x 144.66492pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ts_diff_2_acf_pacf_do_100.png, id=132, 1183.0599pt x 393.1488pt>
+<ts_diff_2_acf_pacf_do_100.png, id=172, 1183.0599pt x 393.1488pt>
 File: ts_diff_2_acf_pacf_do_100.png Graphic file (type png)
 <use ts_diff_2_acf_pacf_do_100.png>
-Package pdftex.def Info: ts_diff_2_acf_pacf_do_100.png  used on input line 262.
+Package pdftex.def Info: ts_diff_2_acf_pacf_do_100.png  used on input line 343.
 (pdftex.def)             Requested size: 435.32419pt x 144.66492pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5 <./ts_diff.png> <./ts_diff_acf_pacf.png> <./ts_diff_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 287--289
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--357
+
+ []
+
+[6 <./ts_diff.png> <./ts_diff_acf_pacf.png> <./ts_diff_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 358--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--294
-
- []
-
-[6 <./ts_diff_2_acf_pacf.png> <./ts_diff_2_acf_pacf_do_100.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 295--298
+Underfull \hbox (badness 10000) in paragraph at lines 361--365
 
  []
 
 
-Overfull \hbox (1.9254pt too wide) in paragraph at lines 300--305
-\T1/lmr/m/n/10.95 ra-turo in se-va-nje. Mo-dele sem tre-ni-rala na $\OT1/lmr/m/n/10.95 75 %$ \T1/lmr/m/n/10.95 po-dat-kov, to je od $\OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 : [] \OT1/lmr/m/n/10.95 2021$ \T1/lmr/m/n/10.95 do $\OT1/lmr/m/n/10.95 4\OML/lmm/m/it/10.95 : [] \OT1/lmr/m/n/10.95 2023$\T1/lmr/m/n/10.95 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--305
+Underfull \hbox (badness 10000) in paragraph at lines 366--370
 
  []
 
-[7] [8]
-<napoved_1.png, id=180, 905.5431pt x 399.6531pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--377
+
+ []
+
+[7 <./ts_diff_2_acf_pacf.png> <./ts_diff_2_acf_pacf_do_100.png>] [8]
+<napoved_1.png, id=208, 905.5431pt x 399.6531pt>
 File: napoved_1.png Graphic file (type png)
 <use napoved_1.png>
-Package pdftex.def Info: napoved_1.png  used on input line 383.
+Package pdftex.def Info: napoved_1.png  used on input line 464.
 (pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
-<napoved_2.png, id=181, 905.5431pt x 399.6531pt>
+<napoved_2.png, id=209, 905.5431pt x 399.6531pt>
 File: napoved_2.png Graphic file (type png)
 <use napoved_2.png>
-Package pdftex.def Info: napoved_2.png  used on input line 387.
+Package pdftex.def Info: napoved_2.png  used on input line 468.
 (pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
-<napoved_3.png, id=182, 905.5431pt x 399.6531pt>
+<napoved_3.png, id=210, 905.5431pt x 399.6531pt>
 File: napoved_3.png Graphic file (type png)
 <use napoved_3.png>
-Package pdftex.def Info: napoved_3.png  used on input line 393.
+Package pdftex.def Info: napoved_3.png  used on input line 474.
 (pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
-<napoved_4.png, id=183, 905.5431pt x 399.6531pt>
+<napoved_4.png, id=211, 905.5431pt x 399.6531pt>
 File: napoved_4.png Graphic file (type png)
 <use napoved_4.png>
-Package pdftex.def Info: napoved_4.png  used on input line 397.
+Package pdftex.def Info: napoved_4.png  used on input line 478.
 (pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
-<napoved_5.png, id=184, 905.5431pt x 399.6531pt>
+<napoved_5.png, id=212, 905.5431pt x 399.6531pt>
 File: napoved_5.png Graphic file (type png)
 <use napoved_5.png>
-Package pdftex.def Info: napoved_5.png  used on input line 403.
+Package pdftex.def Info: napoved_5.png  used on input line 484.
 (pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
-<napoved_6.png, id=185, 905.5431pt x 399.6531pt>
+<napoved_6.png, id=213, 905.5431pt x 399.6531pt>
 File: napoved_6.png Graphic file (type png)
 <use napoved_6.png>
-Package pdftex.def Info: napoved_6.png  used on input line 407.
+Package pdftex.def Info: napoved_6.png  used on input line 488.
 (pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--424
+Underfull \hbox (badness 10000) in paragraph at lines 503--505
 
  []
 
-[9 <./napoved_1.png> <./napoved_2.png> <./napoved_3.png> <./napoved_4.png> <./napoved_5.png> <./napoved_6.png>] [10] (porocilo_KS.bbl) [11] (porocilo_KS.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--562
+
+ []
+
+[9 <./napoved_1.png> <./napoved_2.png> <./napoved_3.png> <./napoved_4.png> <./napoved_5.png> <./napoved_6.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 563--566
+
+ []
+
+(porocilo_KS.bbl) [10] (porocilo_KS.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `porocilo_KS.out' has not changed.
-(rerunfilecheck)             Checksum: BB107A641C0E8E44665198A61A20989F;2505.
+(rerunfilecheck)             Checksum: A0488E04FDD0859B303B4181A19DC652;2989.
  ) 
 Here is how much of TeX's memory you used:
- 13974 strings out of 475550
- 221680 string characters out of 5772263
- 1931238 words of memory out of 5000000
- 34908 multiletter control sequences out of 15000+600000
- 633149 words of font info for 87 fonts, out of 8000000 for 9000
+ 14102 strings out of 475550
+ 223392 string characters out of 5772263
+ 1935238 words of memory out of 5000000
+ 35016 multiletter control sequences out of 15000+600000
+ 645917 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,503b,457s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,504b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on porocilo_KS.pdf (11 pages, 1913674 bytes).
+Output written on porocilo_KS.pdf (10 pages, 1937590 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
