@@ -32,7 +32,7 @@
 
 \title{\textbf{\LARGE{Model napovedi odjema električne energije}} \\ Matematika z računalnikom 2023/24}
 \author{Karolina Šavli}
-\date{Maj 2024}
+\date{Junij 2024}
 
 \maketitle
 
@@ -69,12 +69,11 @@ sezonsko diferenciranje, \dots Pri tem si pogosto pomagamo z obravnavo
 avtokorelacijske funkcije (ACF) in parcialno avtokorelacijske funkcije (PACF). 
 Ti funkciji sta pomembni, saj opisujeta korelacijo med podatkovnimi točkami v časovni vrsti in prejšnjimi vrednostmi 
 časovne vrste (za različne dolžine zamika). Iz teh funkciji lahko razberemo tudi, če imamo sezonsko komponento.
-V grobem, ACF meri linearno razmerje med opazovanjem in njegovimi prejšnjimi opazovanji pri različnih zamikih. 
-PACF pa neposredno meri linearno razmerje med opazovanjem in njegovimi prejšnjimi opazovanji ob določenem zamiku, 
-pri čemer so izključeni prispevki iz vmesnih zamikov. \cite{Stacionarity_V,Brilej_2021} \\
+\cite{Stacionarity_V,Brilej_2021} \\
 
 \noindent Namen naše naloge je najti najbolj optimalen model. Za določitev le-tega bomo uporabili kriterij AIC (ang. \emph{Akaike information criterion}),
-ki je ocenjevalec napake napovedi in s tem relativne kakovosti statističnih modelov za dani nabor podatkov.
+ki je ocenjevalec napake napovedi in s tem relativne kakovosti statističnih modelov za dan nabor podatkov.
+Model, ki ima manjšo vrednost kriterija AIC, je načeloma boljši. 
 
 \subsubsection{Družina modelov ARMA}
 
@@ -96,10 +95,10 @@ modela, $\varepsilon_t, \varepsilon_{t-1}, \dots$ pa je beli šum, ki je običaj
 normalno porazdeljen. \\
 
 \noindent ARMA predpostavlja stacionarno vrsto. Če vrsta ni popolnoma stacionarna, kar je običajno razvidno 
-že kar iz ACF in PACF, lahko uporabimo posplošitev modela ARMA, to je model ARIMA(p, d, q) (ang. \emph{autoregressive integrated moving average}).
+že kar iz ACF in PACF, uporabimo posplošitev modela ARMA, to je model ARIMA(p,d,q) (ang. \emph{autoregressive integrated moving average}).
 Na kratko, ARIMA vrednosti podatkov nadomesti z diferenciranimi vrednostmi reda d, saj na tak način dobi stacionarne podatke.
 V primeru, da imamo sezonsko komponento, uporabimo model SARIMA (sezonska ARIMA). Parametre v modelu
-SARIMA(p, d, q)(P, D, Q)[S] lahko razdelimo na nesezonske (p, d, q) in sezonske (P, D, Q, S). 
+SARIMA(p,d,q)(P,D,Q)[S] lahko razdelimo na nesezonske (p,d,q) in sezonske (P,D,Q,S). 
 p pove koliko korakov nazaj bomo gledali (preberemo iz grafa PACF), 
 d določi kolikokrat smo diferencirali,
 q pa pove število zgodovinskih napak, ki vplivajo na trenutno vrednost (preberemo iz grafa ACF).
@@ -108,7 +107,7 @@ D pove kolikokrat smo sezonsko diferencirali,
 Q določa red sezonskega MA(Q), 
 S pa je perioda. \cite{SARIMA_param} \\
 
-\noindent Model SARIMA(p, d, q)(P, D, Q)[S] je odlike
+\noindent Model SARIMA(p,d,q)(P,D,Q)[S] je odlike
 
 \begin{equation}
     \label{SARIMA}
@@ -116,10 +115,10 @@ S pa je perioda. \cite{SARIMA_param} \\
 \end{equation}
 
 \noindent kjer so $\phi_1, \dots, \phi_P$ in $\Theta_1, \dots, \Theta_Q$ dodatni parametri modela. Opazimo, da 
-smo formuli~\eqref{ARIMA} dodali moder del iz~\eqref{SARIMA}, da smo dobili SARIMA model. \\
+smo Formuli~\eqref{ARIMA} dodali moder del iz Formule~\eqref{SARIMA}, da smo dobili SARIMA model. \\
 
-\noindent Model lahko še dodatno nadgradimo, in sicer z vključitvijo eksogenih spremenljivk, torej neki zunanjih podatkov. Tako
-dobimo model SARIMAX(p, d, q)(P, D, Q)[S], ki je oblike
+\noindent Model lahko še dodatno nadgradimo, in sicer z vključitvijo eksogenih spremenljivk, torej nekih zunanjih podatkov. Tako
+dobimo model SARIMAX(p,d,q)(P,D,Q)[S], ki je oblike
 
 \begin{equation}
     \label{SARIMAX}
@@ -131,8 +130,8 @@ dobimo model SARIMAX(p, d, q)(P, D, Q)[S], ki je oblike
 \subsubsection{Model GARCH}
 
 V modelih družine ARMA je privzeta konstantna varianca. Ni pa nujno, da je le-ta vedno konstantna, zato
-vpeljimo model GARCH, ki se običajno uporablja ravno na podatkih, ki nimajo konstantne variance. 
-Model GARCH($p_G$, $q_G$) je definiran kot
+vpeljimo še model GARCH, ki se običajno uporablja ravno na podatkih, ki nimajo konstantne variance. 
+Model GARCH($p_G$,$q_G$) je definiran kot
 
 \begin{equation}
     \label{GARCH}
@@ -147,7 +146,7 @@ ob času $t$. \cite{ArimaGarch}
 
 \noindent Da v modelu iz družine ARMA, npr. modelu SARIMAX, opišemo tudi varianco, ki ni konstantna, in s tem dobimo bolj
 točen model, lahko 
-konstruiramo model SARIMAX-GARCH. Da dobimo model združimo formul~\eqref{SARIMAX} in ~\eqref{GARCH} ter dobimo
+konstruiramo model SARIMAX-GARCH. Da dobimo model združimo Formuli~\eqref{SARIMAX} in ~\eqref{GARCH} ter dobimo
 
 \begin{equation}
     \label{SARIMAX_GARCH}
@@ -169,7 +168,7 @@ konstruiramo model SARIMAX-GARCH. Da dobimo model združimo formul~\eqref{SARIMA
 \begin{itemize}
     \item  \texttt{DateTimeStartUTC}: univerzalni koordinirani čas,
     \item  \texttt{DateTimeStartCET}: srednjeevropski čas,
-    \item  \texttt{Odjem ACT}: neto odjem električne energije gospodinjskih odjemalcev (tistih brez sončne elektrarne) v kWh,
+    \item  \texttt{Odjem ACT}: odjem električne energije gospodinjskih odjemalcev (tistih brez sončne elektrarne),
     \item  \texttt{Temperatura ACT}: dejanska temperatura, 
     \item  \texttt{Temperatura FC}: s strani GEN-I napovedana temperatura,
     \item  \texttt{Sevanje ACT}: dejansko sevanje in
@@ -183,17 +182,20 @@ konstruiramo model SARIMAX-GARCH. Da dobimo model združimo formul~\eqref{SARIMA
 \end{figure}
 
 \noindent V analizi sem uporabljala vse stolpce, razen stolpca \texttt{DateTimeStartUTC}, saj je v 
-okviru časa bolj relavanten stolpec \texttt{DateTimeStartCET}. Podatki so podani za obdobje od $1.~\text{novembra}~2021$ do $12.~\text{februarja}~2024$,
-na vsakih $15$ minut. Tabela ima vsega skupaj $80064$ vrstic.
+okviru časa bolj relavanten stolpec \texttt{DateTimeStartCET}. Podatki v stolpcu \texttt{Odjem ACT} so bili
+s strani GEN-I normalizirani in zaradi boljše preglednosti in v izogib morebitnemu zaokroževanju 
+ugrajenih funkcij, sem jih pomnožila z  $10^6$. \\
+Podatki so podani za obdobje od $1.~\text{novembra}~2021$ do $29.~\text{februarja}~2024$,
+na vsakih $15$ minut. Tako ima tabela ima vsega skupaj $81696$ vrstic.
 
 % =======================================================================================================================
 
 \subsection{Odjem električne energije}
 
 \noindent Slika~\ref{fig:odjem_EE} prikazuje odjem električne energije za obdobje od 
-$1.~\text{novembra}~2021$ do $12.~\text{februarja}~2024$. 
-Opazna je sezonskost; odjem je znatno večji jeseni in pozimi, zaradi povečane uporabe energije za ogrevanje in 
-razsvetljevo (saj se število ur dnevne svetlobe podaljša). \\
+$1.~\text{novembra}~2021$ do $29.~\text{februarja}~2024$. 
+Opazna je sezonskost - odjem je znatno večji jeseni in pozimi, zaradi povečane uporabe energije za ogrevanje in 
+razsvetljevo, saj se število ur dnevne svetlobe podaljša. \\
 
 \begin{figure}[h!]
     \centering
@@ -203,8 +205,8 @@ razsvetljevo (saj se število ur dnevne svetlobe podaljša). \\
 \end{figure}
 
 \noindent S Tabele~\ref{Tab:opisne_statistike} preberemo, da je povprečna poraba električne energije gospodinjskih odjemalcev
-okrog $12240{,}53 $ MWh, minimalna dosežena vrednost je $3629{,}32$ MWh, maksimalna pa $28736{,}80$ MWh. Vrednosti varirajo
-za okrog $4167{,}98$ MWh. \\
+okrog $12240{,}53 $, minimalna dosežena vrednost je $3629{,}32$, maksimalna pa $28736{,}80$. Vrednosti varirajo
+za okrog $4167{,}98$. \\
 
 \begin{table}[!h]
     \centering
@@ -212,13 +214,13 @@ za okrog $4167{,}98$ MWh. \\
     \label{Tab:opisne_statistike}
     \begin{tabular}{c||c|c|c|c|c}
               & Min & Max & Povprečje & Mediana & Standardni odklon \\ \hline \hline
-        Odjem [MWh] & $3629{,}32$ & $28736{,}80$ & $12240{,}53$ & $11708{,}50$ & $4167{,}98$ \\ 
+        Odjem & $3629{,}32$ & $28736{,}80$ & $12240{,}53$ & $11708{,}50$ & $4167{,}98$ \\ 
     \end{tabular}
 \end{table}
 
 \noindent Odjem električne energije si poglejmo še na ravni tedna. Opazimo, da 
 je od ponedeljka do petka odjem najmanjši ponoči in se veča vse do viška okrog 18 ure, nato pa hitro pade. 
-V soboto in nedeljo pa je prvi višek porabe dopoldne, drugi pa okrog 18 ure, kar je opazno s Slike~\ref{fig:odjem_teden}, 
+V soboto in nedeljo pa je prvi višek porabe dopoldne, drugi pa ponovno okrog 18 ure, kar je opazno s Slike~\ref{fig:odjem_teden}, 
 ki prikazuje odjem 
 električne energije v drugem tednu septembra 2023. 
 Imamo torej sezonskost na dnevni ravni.
@@ -240,7 +242,7 @@ Imamo torej sezonskost na dnevni ravni.
 temperaturo in sevanjem. S pomočjo Slike~\ref{fig:temp_sevanje} ugotovimo, da
 nižja temperatura pomeni višji odjem in obratno. 
 Povezave med sevanjem in odjemom pa ni opaziti; sklepam da zato, ker 
-ne analiziramo samooskrbnih odjemalcev (tisti ki imajo svojo sončno elektrarno). 
+ne analiziramo samooskrbnih odjemalcev (tistih, ki imajo svojo sončno elektrarno). 
 
 \begin{figure}[h!]
     \centering
@@ -261,20 +263,24 @@ eksogeni spremenljivki vključili tudi temperaturo in sevanje.
 
 \subsection{Izbira družine modelov}
 
-Ker pa imamo v podatkih očitno sezonskost, lahko ARIMO nadgradimo v SARIMO, ki dodatno
+Časovna vrsta odjema je visofrekvenčna, ima sezonsko komponento in njeno povprečje ni konstantno.
+Odločimo se, da bomo s pomočjo teorije časovnih vrst konstruirali model iz družine ARMA. 
+Razmislek o izbiri modela začnemo z ARIMO. Ker pa imamo v podatkih očitno sezonskost, lahko ARIMO nadgradimo v SARIMO, 
+ki dodatno
 upošteva še sezonske vzorce. Ker bi radi vključili tudi eksogeni spremenljivki (temperatura in sevanje), model
 dodatno nadgradimo v model SARIMAX.
-Vemo pa, da ima ta družina modelov težavo predvsem pri napovedih časovnih vrst, ki se jim  
-skozi čas spreminja varianca. Da bo naše napovedovanje bolj učinkovito, bomo modelu SARIMAX povezali z modelom GARCH, 
+Vemo pa tudi, da ima ta družina modelov težavo predvsem pri napovedih časovnih vrst, ki se jim  
+skozi čas spreminja varianca. Da bo naše napovedovanje bolj učinkovito, bomo model SARIMAX povezali z modelom GARCH, 
 ki se uporablja ravno za modeliranje volativnih podatkov.~\cite{ArimaGarch} Konstruirati torej želimo model
-SARIMAX-GARCH, ki smo ga že opisali formulo~\eqref{SARIMAX_GARCH}. \\
+SARIMAX-GARCH, ki smo ga opisali s Formulo~\eqref{SARIMAX_GARCH}.
 
 
 % =======================================================================================================================
 
 \subsection{Odstranitev sezonskosti in pridobitev stacionarnosti}
 
-Da bomo lahko indentificiralni potencialne modele iz družine ARMA, moramo najprej originalno časovno vrsto (Slika~\ref{fig:odjem_EE})
+Da bomo lahko indentificiralni potencialne modele iz družine ARMA, moramo najprej 
+originalno časovno vrsto (Slika~\ref{fig:odjem_EE})
 narediti stacionarno. \\
 
 \noindent Ker so naši podatki volatilni najprej naredimo \textbf{logaritmične donose} 
@@ -301,43 +307,43 @@ ACF in PACF logaritmičnih donosov do odloga $1000$ (to je
 malo manj kot dva tedna). Z grafov je očitno, da časovna vrsta ni stacionarna. Opazna je sezonska komponentna, in sicer $96$, 
 kar je ravno en dan \footnote{Podatki so podani na $15$ minut in $15\,\text{min} \cdot 96 = 1440\,\text{min}$, kar je ravno en dan.}. \\
 
-\noindent Da dosežemo stacionarnost, se je potrebno sezonskosti znebiti, zato bomo podatke \textbf{sezonsko diferencirali}.
-Nova časovna vrsta bo $Z_t = Y_t - Y_{t-96}$. Prikazana je na Sliki~\ref{fig:ts_diff}, njeni ACF in PACF pa na Sliki~\ref{fig:ts_diff_acf_pacf}.
+\noindent Da dosežemo stacionarnost, se je potrebno sezonskosti znebiti, zato bomo podatke naprej \textbf{sezonsko diferencirali}.
+Nova časovna vrsta bo $Z_t = Y_t - Y_{t-96} = \bigtriangledown_{96}Y_t$. Prikazana je na Sliki~\ref{fig:ts_diff}, njeni ACF in PACF pa na Sliki~\ref{fig:ts_diff_acf_pacf}.
 
 \begin{figure}[h!]
     \centering
-    \caption{Časovna vrsta po sezonskem diferenciranju, 2021-2024}\par\medskip
+    \caption{Časovna vrsta $Z_t$, 2021-2024}\par\medskip
     \label{fig:ts_diff}
     \includegraphics[width=0.9\textwidth]{ts_diff.png}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste po sezonskem diferenciranju}\par\medskip
+    \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste $Z_t$}\par\medskip
     \label{fig:ts_diff_acf_pacf}
     \includegraphics[width=0.9\textwidth]{ts_diff_acf_pacf.png}
 \end{figure}
 
 \noindent Na grafu ACF opazimo ponavljanje vzorca, kar pomeni, da časovna vrsta $Z_t$ še kar ni stacionarna. 
-Še enkrat jo diferenciramo, tokrat nesezonsko, in dobimo vrsto $X_t = Z_t - Z_{t-1}$. 
+Še enkrat jo diferenciramo, tokrat \textbf{ne}sezonsko. Dobimo časovno vrsto $X_t = Z_t - Z_{t-1} = \bigtriangledown{Z_t}$. 
 Prikazana je na Sliki~\ref{fig:ts_diff_2}, njeni ACF in PACF pa na Sliki~\ref{fig:ts_diff_2_acf_pacf}.
 
 \begin{figure}[h!]
     \centering
-    \caption{Časovna vrsta po prvem nesezonskem diferenciranju, 2021-2024}\par\medskip
+    \caption{Časovna vrsta $X_t$, 2021-2024}\par\medskip
     \label{fig:ts_diff_2}
     \includegraphics[width=0.9\textwidth]{ts_diff_2.png}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste po prvem nesezonskem diferenciranju}\par\medskip
+    \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste $X_t$}\par\medskip
     \label{fig:ts_diff_2_acf_pacf}
     \includegraphics[width=0.9\textwidth]{ts_diff_2_acf_pacf.png}
 \end{figure}
 
 \begin{figure}[h!]
-    \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste po prvem nesezonskem diferenciranju, odlogi do 100}\par\medskip
+    \caption{Vzorčna avtokorelacijska in parcialna avtokorelacija funkcija časovne vrste $X_t$, odlogi do 100}\par\medskip
     \centering
     \label{fig:ts_diff_2_acf_pacf_do_100}
     \includegraphics[width=0.9\textwidth]{ts_diff_2_acf_pacf_do_100.png}
@@ -353,7 +359,7 @@ KPSS in Phillips-Perron potrdijo njeno stacionarnost.
 \subsection{Identifikacija modela SARIMAX}
 
 \noindent Na podlagi ACF in PACF (Slika~\ref{fig:ts_diff_2_acf_pacf}) stacionarne časovne vrste $X_t$, izberimo parametre 
-modela SARIMAX(p, d, q)(P, D, Q)[S], ki je podan z enačbo~\eqref{SARIMAX}. \\
+modela SARIMAX(p,d,q)(P,D,Q)[S], ki je podan z Enačbo~\eqref{SARIMAX}. \\
 
 \noindent Ker smo časovno vrsto enkrat sezonsko diferencirali bo $\text{D} = 1$ in ker smo jo enkrat 
 navadno diferencirali bo $\text{d} = 1$. Perioda je enaka $96$, torej je $\text{S} = 96$. \\
@@ -373,11 +379,11 @@ saj le-ti kažejo močan vpliv. \\
 Modele sem trenirala na $75~\%$ podatkov, to je od $1.~\text{novembra}~2021$ do $4.~\text{avgusta}~2023$. Na preostanku podatkov 
 pa sem izvajala teste napovedi. 
 Vrednosti kriterija AIC za posamezne modele so prikazane v Tabeli~\ref{Tab:SARIMA_AIC}. 
-Najmanjšo vrednostjo kriterija AIC ima model SARIMAX(4, 1, 5)(0, 1, 0)[96]. \\
-
-\noindent S Tabele~\ref{Tab:SARIMA_AIC} je razvidno, da sem za sezonska parametra P in Q v vseh primerih izbrala 
+Najmanjšo vrednostjo kriterija AIC ima model SARIMAX(4,1,5)(0,1,0)[96] \footnote{S Tabele~\ref{Tab:SARIMA_AIC} 
+je razvidno, da sem za sezonska parametra P in Q v vseh primerih izbrala 
 vrednost $0$, čeprav predvidevam, da bi bile bolj optimalne višje vrednosti. Te modele sem poskusila zagnati, 
-vendar moj računalnik ni vrnil nobenega rezultata, ker očitno ni dovolj zmogljiv. 
+vendar moj računalnik ni vrnil nobenega rezultata, ker očitno ni dovolj zmogljiv. Predvidevam da bi z 
+vključitvijo vrednosti P in Q, prišla do še bolj optimalnih rezultatov.}. 
 
 \begin{table}[!ht]
     \centering
@@ -400,7 +406,8 @@ vendar moj računalnik ni vrnil nobenega rezultata, ker očitno ni dovolj zmoglj
     \end{tabular}
 \end{table}
 
-\noindent Izbran imamo model SARIMAX, v naslednjem koraku pa na podoben način izberimo še model GARCH. 
+\noindent Izbran imamo model SARIMAX, v naslednjem koraku pa na podoben način izberimo še model GARCH, da bomo
+prišli do želenega modela SARIMAX-GARCH. 
 
 % =======================================================================================================================
 
@@ -408,22 +415,24 @@ vendar moj računalnik ni vrnil nobenega rezultata, ker očitno ni dovolj zmoglj
 
 Model GARCH(p, q) bomo konstruirali na rezidualih izbranega modela SARIMAX. Preizkusili bomo $6$ kombinacij 
 parametrov p in q, in sicer $(1,1), (1,2), (2,1), (2,2), (1,3)$ ter $(3,1)$. 
-Na podlagi vrednosti kriterija AIC se odločimo za model \textbf{SARIMAX(4, 1, 5)(0, 1, 0)[96]-GARCH(1, 3)}, saj
-je iz Tabele~\ref{Tab:GARCH_AIC} razvidno, da ima najmanjšo vrednost kriterija AIC. 
+Na podlagi vrednosti kriterija AIC se odločimo za model \textbf{SARIMAX(4,1,5)(0,1,0)[96]-GARCH(1,3)}, saj
+je iz Tabele~\ref{Tab:GARCH_AIC} razvidno, da ima najmanjšo vrednost kriterija AIC. Ima tudi manjšo vrednost 
+AIC kot SARIMAX(4,1,5)(0,1,0)[96]-\textbf{GARCH(0,0)}, kar je enako SARIMAX(4,1,5)(0,1,0)[96]. S povezavo
+SARIMAX in GARCH torej res pridemo do boljšega modela. 
 
 \begin{table}[!ht]
     \centering
-    \caption{Vrednost kriterija AIC za izbrane modele SARIMAX(4, 1, 5)(0, 1, 0)[96]-GARCH(p, q)}\par\medskip
+    \caption{Vrednost kriterija AIC za izbrane modele SARIMAX(4,1,5)(0,1,0)[96]-GARCH(p,q)}\par\medskip
     \label{Tab:GARCH_AIC}
     \begin{tabular}{c|c}
         SARIMAX-GARCH(p,q) & AIC \\ \hline
-        (0, 0) & $-347619{,}304$ \\ 
-        (1, 1) & $-365754{,}448$ \\ 
-        (1, 2) & $-366056{,}218$ \\ 
-        (2, 1) & $-365434{,}577$ \\ 
-        (2, 2) & $-365843{,}673$ \\ 
-        (1, 3) & $\mathbf{-366134{,}335}$ \\ 
-        (3, 1) & $-365252{,}576$ \\ 
+        $(0,0)$ & $-347619{,}304$ \\ 
+        $(1,1)$ & $-365754{,}448$ \\ 
+        $(1,2)$ & $-366056{,}218$ \\ 
+        $(2,1)$ & $-365434{,}577$ \\ 
+        $(2,2)$ & $-365843{,}673$ \\ 
+        $(1,3)$ & $\mathbf{-366134{,}335}$ \\ 
+        $(3,1)$ & $-365252{,}576$ \\ 
     \end{tabular}
 \end{table}
 
@@ -432,8 +441,8 @@ je iz Tabele~\ref{Tab:GARCH_AIC} razvidno, da ima najmanjšo vrednost kriterija 
 
 \subsection{Izbran model}
 
-Na podlagi vrednosti kriterija AIC smo se odločili za SARIMAX(4, 1, 5)(0, 1, 0)[96]-GARCH(1, 3). 
-Ključni koeficienti izbranega modela v formuli~\eqref{SARIMAX_GARCH} so:
+Na podlagi vrednosti kriterija AIC smo se odločili za SARIMAX(4,1,5)(0,1,0)[96]-GARCH(1,3). 
+Ključni koeficienti izbranega modela v Formuli~\eqref{SARIMAX_GARCH} so:
 
 \begin{itemize}
     \item  AR del: $\varphi_1 = -0{,}3686,\, \varphi_2 = -0{,}4185,\, \varphi_3 = -0{,2894},\, \varphi_4 = 0{,0486}$
@@ -443,7 +452,7 @@ Ključni koeficienti izbranega modela v formuli~\eqref{SARIMAX_GARCH} so:
     \item  Eksogene spremenljivke: koeficient pri temperaturi je enak $-0{,}0003$, pri sevanju pa $3{,}747 \cdot 10^{-6}$
 \end{itemize}
 
-\noindent Sevanje ima torej pri modelu napovedi zelo majhen vpliv, vendar sem preverila, da je model z vključitvijo sevanja
+\noindent Sevanje ima torej pri modelu napovedi zelo majhen vpliv, vendar sem preverila in ugotovila da je model z vključitvijo sevanja
 še vedno malce boljši. Model je nasploh z vključitvijo eksogenih spremenljivk preverjeno bolj točen. 
 
 
@@ -508,14 +517,14 @@ v povprečju znašajo RMSE $261{,}926$, MAPE pa $1{,}478~\%$. \\
     \centering
     \caption{Vrednost napake RMSE in MAPE za izbrane datume}\par\medskip
     \label{Tab:RMSE_MAPE}
-    \begin{tabular}{c|c|c}
+    \begin{tabular}{l|c|c}
         Datum & RMSE & MAPE \\ \hline
-        5.avg.23 & 156,600 & 1,104 \\ 
-        24.sep.23 & 365,372 & 2,392 \\ 
-        16.nov.23 & 176,901 & 1,199 \\ 
-        30.dec.23 & 224,123 & 1,046 \\ 
-        7.jan.23 & 399,578 & 1,839 \\ 
-        12.feb.23 & 248,981 & 1,287 \\ \hline
+        5. avgust 2023 & 156,600 & 1,104 \\ 
+        24. september 2023 & 365,372 & 2,392 \\ 
+        16. november 2023 & 176,901 & 1,199 \\ 
+        30. december 2023 & 224,123 & 1,046 \\ 
+        7. januar 2024 & 399,578 & 1,839 \\ 
+        12. februar 2024 & 248,981 & 1,287 \\ \hline
         Povprečje & 261,926 & 1,478 \\ 
     \end{tabular}
 \end{table}
@@ -523,7 +532,7 @@ v povprečju znašajo RMSE $261{,}926$, MAPE pa $1{,}478~\%$. \\
 
 \noindent Napaki RMSE in MAPE sem izračunala še posebej za zadnji teden septembra 2023 in 
 prvi teden februarja 2024. Rezultati so prikazani v Tabeli~\ref{Tab:RMSE_MAPE_sept}  in v Tabeli~\ref{Tab:RMSE_MAPE_feb}. 
-Iz Tabele~\ref{Tab:RMSE_MAPE_sept} zgleda kot da se večja napaka pojavi za vikend, vendar glede na rezultat iz
+Iz Tabele~\ref{Tab:RMSE_MAPE_sept} zgleda kot, da se večja napaka pojavi za vikend, vendar glede na rezultat iz
 Tabele~\ref{Tab:RMSE_MAPE_feb} ne moremo tega z gotovostjo trditi. 
 
 
@@ -531,7 +540,7 @@ Tabele~\ref{Tab:RMSE_MAPE_feb} ne moremo tega z gotovostjo trditi.
     \centering
     \caption{Vrednost napake RMSE in MAPE zadnji teden septembra 2023}\par\medskip
     \label{Tab:RMSE_MAPE_sept}
-    \begin{tabular}{c|c|c|c|c|c|c|c||c}
+    \begin{tabular}{c||c|c|c|c|c|c|c||c}
         ~ & Ponedeljek & Torek & Sreda & Četrtek & Petek & Sobota & Nedelja & Povprečje\\ \hline
         RMSE & $98{,}768$ & $73{,}987$ & $84{,}263$ & $90{,}712$ & $182{,}816$ & $220{,}022$ & $336{,}630$ & $155{,}314$ \\ 
         MAPE & $0{,}813$ & $0{,}707$ & $0{,}800$ & $0{,}773$ & $1{,}442$ & $1{,}679$ & $2{,}406$ & $1{,}231$\\ 
@@ -543,7 +552,7 @@ Tabele~\ref{Tab:RMSE_MAPE_feb} ne moremo tega z gotovostjo trditi.
     \centering
     \caption{Vrednost napake RMSE in MAPE prvi teden februarja 2024}\par\medskip
     \label{Tab:RMSE_MAPE_feb}
-    \begin{tabular}{c|c|c|c|c|c|c|c||c}
+    \begin{tabular}{c||c|c|c|c|c|c|c||c}
         ~ & Ponedeljek & Torek & Sreda & Četrtek & Petek & Sobota & Nedelja & Povprečje\\ \hline
         RMSE & $136{,}451$ & $129{,}370$ & $418{,}558$ & $324{,}463$ & $168{,}860$ & $353{,}170$ & $420{,}640$ & $278{,}788$\\ 
         MAPE & $0{,}867$ & $0{,}817$ & $2{,}041$ & $1{,}522$ & $1{,}108$ & $1{,}670$ & $2{,}377$ & $1{,}486$\\ 
@@ -558,22 +567,23 @@ Tabele~\ref{Tab:RMSE_MAPE_feb} ne moremo tega z gotovostjo trditi.
 
 \noindent S pomočjo transformacije podatkov, preverjanja ACF, PACF ter vrednosti kriterija AIC pridemo do 
 modela napovedi odjema električne energije gospodinjskih odjemalcev. 
-Kot optimalen model izberemo SARIMAX(4, 1, 5)(0, 1, 0)[96]-GARCH(1, 3). \\
+Kot optimalen model izberemo SARIMAX(4,1,5)(0,1,0)[96]-GARCH(1,3). \\
 
 \noindent Napoved izbranega modela dobro opisuje dejanske vrednosti, kar je lepo razvidno iz grafov napovedi. 
 Formalno, povprečna napaka RMSE znaša okrog $260$, 
 MAPE pa $1{,}5~\%$. Tekom dela ugotovimo tudi, da vključitev eksogenih podatkov prispeva k bolj točni napovedi. \\
 
 \noindent Če bi modele testirala s pomočjo bolj zmogljivega računalnika, sem prepričana, da bi prišla do vsaj malo boljših
-napovedi. Kljub vsemu pa so rezultati napovedi dobri in predvsem smiselni.
+napovedi, saj bi vključila še sezonske parametre. 
+Kljub vsemu pa so rezultati napovedi dobri in predvsem smiselni.
 
 
 % =======================================================================================================================
 % =======================================================================================================================
 
-
+{\small
 \bibliographystyle{abbrv}
-\bibliography{literatura.bib}
+\bibliography{literatura.bib}}
 
 
 \end{document}

@@ -391,9 +391,11 @@ INPUT .\napoved_6.png
 INPUT .\napoved_6.png
 INPUT .\napoved_6.png
 INPUT .\napoved_6.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT .\porocilo_KS.bbl
 INPUT .\porocilo_KS.bbl
 INPUT porocilo_KS.bbl
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT porocilo_KS.aux
 INPUT .\porocilo_KS.out
 INPUT .\porocilo_KS.out

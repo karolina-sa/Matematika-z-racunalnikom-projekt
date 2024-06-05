@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.28)  22 MAY 2024 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.28)  5 JUN 2024 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -520,210 +520,200 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--61
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--75
+Underfull \hbox (badness 10000) in paragraph at lines 62--73
 
  []
 
 [1
 
 {C:/Users/Uporabnik/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--110
+Underfull \hbox (badness 10000) in paragraph at lines 97--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--120
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
 [2{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 170.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 169.
  (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 170.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 169.
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<tabela.png, id=112, 1120.9378pt x 518.6878pt>
+<tabela.png, id=112, 750.55406pt x 283.0575pt>
 File: tabela.png Graphic file (type png)
 <use tabela.png>
-Package pdftex.def Info: tabela.png  used on input line 182.
-(pdftex.def)             Requested size: 435.32419pt x 201.44057pt.
+Package pdftex.def Info: tabela.png  used on input line 181.
+(pdftex.def)             Requested size: 435.32419pt x 164.17776pt.
 
-Overfull \hbox (23.53043pt too wide) in paragraph at lines 185--188
-\T1/lmr/m/n/10.95 van-ten stol-pec \T1/lmtt/m/n/10.95 DateTimeStartCET\T1/lmr/m/n/10.95 . Po-datki so po-dani za ob-do-bje od $\OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 : [] \OT1/lmr/m/n/10.95 2021$ \T1/lmr/m/n/10.95 do $\OT1/lmr/m/n/10.95 12\OML/lmm/m/it/10.95 : [] \OT1/lmr/m/n/10.95 2024$\T1/lmr/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--197
+Underfull \hbox (badness 10000) in paragraph at lines 195--199
 
  []
 
-<odjem_EE.png, id=115, 1185.228pt x 390.9807pt>
+<odjem_EE.png, id=115, 1183.0599pt x 388.8126pt>
 File: odjem_EE.png Graphic file (type png)
 <use odjem_EE.png>
-Package pdftex.def Info: odjem_EE.png  used on input line 202.
-(pdftex.def)             Requested size: 435.32419pt x 143.60463pt.
+Package pdftex.def Info: odjem_EE.png  used on input line 204.
+(pdftex.def)             Requested size: 435.32419pt x 143.06934pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--208
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
 
  []
 
 [3{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./tabela.png>]
-<odjem_teden.png, id=128, 1465.6356pt x 396.0396pt>
+<odjem_teden.png, id=128, 1463.4675pt x 393.8715pt>
 File: odjem_teden.png Graphic file (type png)
 <use odjem_teden.png>
-Package pdftex.def Info: odjem_teden.png  used on input line 230.
-(pdftex.def)             Requested size: 435.32419pt x 117.62834pt.
+Package pdftex.def Info: odjem_teden.png  used on input line 232.
+(pdftex.def)             Requested size: 435.32419pt x 117.15869pt.
 <temp_sevanje.png, id=130, 1433.8368pt x 422.0568pt>
 File: temp_sevanje.png Graphic file (type png)
 <use temp_sevanje.png>
-Package pdftex.def Info: temp_sevanje.png  used on input line 249.
+Package pdftex.def Info: temp_sevanje.png  used on input line 251.
 (pdftex.def)             Requested size: 435.32419pt x 128.13786pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--271
-
- []
-
-[4 <./odjem_EE.png> <./odjem_teden.png> <./temp_sevanje.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 277--279
+ [4 <./odjem_EE.png> <./odjem_teden.png> <./temp_sevanje.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 282--285
 
  []
 
-<log_returns.png, id=144, 1176.5556pt x 393.1488pt>
+<log_returns.png, id=144, 1174.3875pt x 390.9807pt>
 File: log_returns.png Graphic file (type png)
 <use log_returns.png>
-Package pdftex.def Info: log_returns.png  used on input line 289.
-(pdftex.def)             Requested size: 435.32419pt x 145.46277pt.
+Package pdftex.def Info: log_returns.png  used on input line 295.
+(pdftex.def)             Requested size: 435.32419pt x 144.92905pt.
 <log_returns_acf_pacf.png, id=145, 1183.0599pt x 393.1488pt>
 File: log_returns_acf_pacf.png Graphic file (type png)
 <use log_returns_acf_pacf.png>
-Package pdftex.def Info: log_returns_acf_pacf.png  used on input line 296.
+Package pdftex.def Info: log_returns_acf_pacf.png  used on input line 302.
 (pdftex.def)             Requested size: 435.32419pt x 144.66492pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 302.
+(Font)              <9> on input line 308.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 302.
+(Font)              <5> on input line 308.
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--303
+Underfull \hbox (badness 10000) in paragraph at lines 305--309
 
  []
 
 [5 <./log_returns.png> <./log_returns_acf_pacf.png>]
-<ts_diff.png, id=166, 1161.3789pt x 390.9807pt>
+<ts_diff.png, id=160, 1178.7237pt x 388.8126pt>
 File: ts_diff.png Graphic file (type png)
 <use ts_diff.png>
-Package pdftex.def Info: ts_diff.png  used on input line 311.
-(pdftex.def)             Requested size: 435.32419pt x 146.55177pt.
-<ts_diff_acf_pacf.png, id=167, 1183.0599pt x 393.1488pt>
+Package pdftex.def Info: ts_diff.png  used on input line 317.
+(pdftex.def)             Requested size: 435.32419pt x 143.59143pt.
+<ts_diff_acf_pacf.png, id=161, 1183.0599pt x 393.1488pt>
 File: ts_diff_acf_pacf.png Graphic file (type png)
 <use ts_diff_acf_pacf.png>
-Package pdftex.def Info: ts_diff_acf_pacf.png  used on input line 318.
+Package pdftex.def Info: ts_diff_acf_pacf.png  used on input line 324.
 (pdftex.def)             Requested size: 435.32419pt x 144.66492pt.
-<ts_diff_2.png, id=170, 1162.1016pt x 390.9807pt>
+<ts_diff_2.png, id=164, 1178.7237pt x 388.8126pt>
 File: ts_diff_2.png Graphic file (type png)
 <use ts_diff_2.png>
-Package pdftex.def Info: ts_diff_2.png  used on input line 329.
-(pdftex.def)             Requested size: 435.32419pt x 146.46228pt.
-<ts_diff_2_acf_pacf.png, id=171, 1183.0599pt x 393.1488pt>
+Package pdftex.def Info: ts_diff_2.png  used on input line 335.
+(pdftex.def)             Requested size: 435.32419pt x 143.59143pt.
+<ts_diff_2_acf_pacf.png, id=165, 1183.0599pt x 393.1488pt>
 File: ts_diff_2_acf_pacf.png Graphic file (type png)
 <use ts_diff_2_acf_pacf.png>
-Package pdftex.def Info: ts_diff_2_acf_pacf.png  used on input line 336.
+Package pdftex.def Info: ts_diff_2_acf_pacf.png  used on input line 342.
 (pdftex.def)             Requested size: 435.32419pt x 144.66492pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ts_diff_2_acf_pacf_do_100.png, id=172, 1183.0599pt x 393.1488pt>
+<ts_diff_2_acf_pacf_do_100.png, id=166, 1183.0599pt x 393.1488pt>
 File: ts_diff_2_acf_pacf_do_100.png Graphic file (type png)
 <use ts_diff_2_acf_pacf_do_100.png>
-Package pdftex.def Info: ts_diff_2_acf_pacf_do_100.png  used on input line 343.
+Package pdftex.def Info: ts_diff_2_acf_pacf_do_100.png  used on input line 349.
 (pdftex.def)             Requested size: 435.32419pt x 144.66492pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 355--357
-
- []
-
 [6 <./ts_diff.png> <./ts_diff_acf_pacf.png> <./ts_diff_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 358--360
+Underfull \hbox (badness 10000) in paragraph at lines 361--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--365
+Underfull \hbox (badness 10000) in paragraph at lines 364--366
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--370
+Underfull \hbox (badness 10000) in paragraph at lines 367--371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--377
+Underfull \hbox (badness 10000) in paragraph at lines 372--376
 
  []
 
-[7 <./ts_diff_2_acf_pacf.png> <./ts_diff_2_acf_pacf_do_100.png>] [8]
-<napoved_1.png, id=208, 905.5431pt x 399.6531pt>
+[7 <./ts_diff_2_acf_pacf.png> <./ts_diff_2_acf_pacf_do_100.png>]
+Overfull \hbox (4.12881pt too wide) in paragraph at lines 444--446
+\T1/lmr/m/n/10.95 Na pod-lagi vre-dno-sti kri-te-rija AIC smo se od-lo-£ili za SARIMAX(4,1,5)(0,1,0)[96]-GARCH(1,3). Klju£ni
+ []
+
+[8]
+<napoved_1.png, id=210, 903.375pt x 397.485pt>
 File: napoved_1.png Graphic file (type png)
 <use napoved_1.png>
-Package pdftex.def Info: napoved_1.png  used on input line 464.
-(pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
-<napoved_2.png, id=209, 905.5431pt x 399.6531pt>
+Package pdftex.def Info: napoved_1.png  used on input line 473.
+(pdftex.def)             Requested size: 232.17241pt x 102.15489pt.
+<napoved_2.png, id=211, 903.375pt x 397.485pt>
 File: napoved_2.png Graphic file (type png)
 <use napoved_2.png>
-Package pdftex.def Info: napoved_2.png  used on input line 468.
-(pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
-<napoved_3.png, id=210, 905.5431pt x 399.6531pt>
+Package pdftex.def Info: napoved_2.png  used on input line 477.
+(pdftex.def)             Requested size: 232.17241pt x 102.15489pt.
+<napoved_3.png, id=212, 903.375pt x 397.485pt>
 File: napoved_3.png Graphic file (type png)
 <use napoved_3.png>
-Package pdftex.def Info: napoved_3.png  used on input line 474.
-(pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
-<napoved_4.png, id=211, 905.5431pt x 399.6531pt>
+Package pdftex.def Info: napoved_3.png  used on input line 483.
+(pdftex.def)             Requested size: 232.17241pt x 102.15489pt.
+<napoved_4.png, id=213, 903.375pt x 397.485pt>
 File: napoved_4.png Graphic file (type png)
 <use napoved_4.png>
-Package pdftex.def Info: napoved_4.png  used on input line 478.
-(pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
-<napoved_5.png, id=212, 905.5431pt x 399.6531pt>
+Package pdftex.def Info: napoved_4.png  used on input line 487.
+(pdftex.def)             Requested size: 232.17241pt x 102.15489pt.
+<napoved_5.png, id=214, 903.375pt x 397.485pt>
 File: napoved_5.png Graphic file (type png)
 <use napoved_5.png>
-Package pdftex.def Info: napoved_5.png  used on input line 484.
-(pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
-<napoved_6.png, id=213, 905.5431pt x 399.6531pt>
+Package pdftex.def Info: napoved_5.png  used on input line 493.
+(pdftex.def)             Requested size: 232.17241pt x 102.15489pt.
+<napoved_6.png, id=215, 903.375pt x 397.485pt>
 File: napoved_6.png Graphic file (type png)
 <use napoved_6.png>
-Package pdftex.def Info: napoved_6.png  used on input line 488.
-(pdftex.def)             Requested size: 232.17241pt x 102.46817pt.
+Package pdftex.def Info: napoved_6.png  used on input line 497.
+(pdftex.def)             Requested size: 232.17241pt x 102.15489pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 503--505
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 559--562
+Underfull \hbox (badness 10000) in paragraph at lines 512--514
 
  []
 
 [9 <./napoved_1.png> <./napoved_2.png> <./napoved_3.png> <./napoved_4.png> <./napoved_5.png> <./napoved_6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 563--566
+Underfull \hbox (badness 10000) in paragraph at lines 568--571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--575
 
  []
 
@@ -736,17 +726,17 @@ Package rerunfilecheck Info: File `porocilo_KS.out' has not changed.
 (rerunfilecheck)             Checksum: A0488E04FDD0859B303B4181A19DC652;2989.
  ) 
 Here is how much of TeX's memory you used:
- 14102 strings out of 475550
- 223392 string characters out of 5772263
- 1935238 words of memory out of 5000000
- 35016 multiletter control sequences out of 15000+600000
- 645917 words of font info for 102 fonts, out of 8000000 for 9000
+ 14105 strings out of 475550
+ 223430 string characters out of 5772263
+ 1936238 words of memory out of 5000000
+ 35018 multiletter control sequences out of 15000+600000
+ 653170 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,504b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,504b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on porocilo_KS.pdf (10 pages, 1937590 bytes).
+Output written on porocilo_KS.pdf (10 pages, 1898504 bytes).
 PDF statistics:
- 345 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
