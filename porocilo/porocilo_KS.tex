@@ -87,7 +87,7 @@ ARMA model je oblike
 
 \begin{equation}
     \label{ARIMA}
-    X_t = \mu +  \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_t \varepsilon_{t-i}} + \varepsilon_t \,,
+    X_t = \mu +  \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_i \varepsilon_{t-i}} + \varepsilon_t \,,
 \end{equation}
 
 \noindent kjer so $\varphi_1, \dots, \varphi_p$ ter $\theta_1, \dots, \theta_q$ parametri
@@ -111,7 +111,7 @@ S pa je perioda. \cite{SARIMA_param} \\
 
 \begin{equation}
     \label{SARIMA}
-    X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_t \varepsilon_{t-i}} + \color{blue} \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  \color{black} +  \varepsilon_t\,,
+    X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_i \varepsilon_{t-i}} + \color{blue} \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  \color{black} +  \varepsilon_t\,,
 \end{equation}
 
 \noindent kjer so $\phi_1, \dots, \phi_P$ in $\Theta_1, \dots, \Theta_Q$ dodatni parametri modela. Opazimo, da 
@@ -122,7 +122,7 @@ dobimo model SARIMAX(p,d,q)(P,D,Q)[S], ki je oblike
 
 \begin{equation}
     \label{SARIMAX}
-    X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_t \varepsilon_{t-i}} + \color{blue} \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  \color{red}  + \sum_{r=1}^{R}{\beta_i Y_{i_{t}}} \color{black} +  \varepsilon_t\,,
+    X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_i \varepsilon_{t-i}} + \color{blue} \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  \color{red}  + \sum_{r=1}^{R}{\beta_i Y_{i_{t}}} \color{black} +  \varepsilon_t\,,
 \end{equation}
 
 \noindent kjer je ob času $t$, $Y_{i_t}$ $i$-ta eksogena spremenljvika s koeficientom $\beta_i$. \cite{ARMA_ARIMA_SARIMA_SARIMAX}
@@ -150,7 +150,7 @@ konstruiramo model SARIMAX-GARCH. Da dobimo model združimo Formuli~\eqref{SARIM
 
 \begin{equation}
     \label{SARIMAX_GARCH}
-    X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_t \varepsilon_{t-i}} + \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  + \sum_{r=1}^{R}{\beta_i Y_{i_{t}}} \color{orange} + \sqrt{\sigma_t} z_t \color{black} \,,
+    X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_i \varepsilon_{t-i}} + \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  + \sum_{r=1}^{R}{\beta_i Y_{i_{t}}} \color{orange} + \sqrt{\sigma_t} z_t \color{black} \,,
 \end{equation}
 
 \noindent kjer je $z_t \sim \text{NEP}(0,1)$. \cite{ArimaGarch}

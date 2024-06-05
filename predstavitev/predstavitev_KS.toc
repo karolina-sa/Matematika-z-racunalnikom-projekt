@@ -1,0 +1,13 @@
+\babel@toc {slovene}{}\relax 
+\beamer@sectionintoc {1}{Podatki in cilj projektne naloge}{3}{0}{1}
+\beamer@sectionintoc {2}{Osnovna analiza podatkov}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Odjem električne energije}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Povezava med odjemom in temperaturo ter sevanjem}{7}{0}{2}
+\beamer@sectionintoc {3}{Napredna analiza podatkov}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Izbira družine modelov}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Odstranitev sezonskosti in pridobitev stacionarnosti}{18}{0}{3}
+\beamer@subsectionintoc {3}{3}{Identifikacija modela SARIMAX}{27}{0}{3}
+\beamer@subsectionintoc {3}{4}{Izbira modela SARIMAX-GARCH}{33}{0}{3}
+\beamer@subsectionintoc {3}{5}{Izbiran model}{35}{0}{3}
+\beamer@sectionintoc {4}{Testiranje modela}{38}{0}{4}
+\beamer@sectionintoc {5}{Zaključek}{41}{0}{5}
