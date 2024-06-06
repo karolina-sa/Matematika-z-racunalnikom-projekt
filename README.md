@@ -40,6 +40,7 @@ MAPE pa $1{,}5~\%$. Tekom dela ugotovimo tudi, da vključitev eksogenih podatkov
 
 - Mapa `kratko_porocilo` vsebuje poročilo `kratko_porocilo.pdf`, ki predstavi motivacijo in osnovno analizo podatkov pred pričetkom resnega dela.
 - Mapa `porocilo` vsebuje glavno poročilo (datoteka `porocilo_KS.pdf`).
+- V mapi `predstavitev` je predstavitev projektne naloge (datoteka `predstavitev_KS.pdf`)
 - `napredna_analiza.ipynb` je datoteka s celotno koda in rezultati analize.
 - `napoved_za_poljubni_dan.ipynb` vsebuje funkcijo **napoved_z_SARIMA_GARCH**, ki izriše prileganje grafa napovedi (po modelu SARIMAX(4,1,5)(0,1,0)[96]-GARCH(1,3) z upoštevanjem eksogenih podatkov temperature in sevanja) dejanskemu odjemu. Prav tako izpiše napaki RMSE in MAPE.
 - `porocilo_KS.pdf` je zaključna verzija poročila projekta.
