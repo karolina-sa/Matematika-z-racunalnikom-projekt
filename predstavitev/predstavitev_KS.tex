@@ -112,7 +112,7 @@
     \uncover<2->{
 
     \item \textbf{Cilj projekta}: sestaviti model, ki bo kar se da točno 
-    napovedal odjem električne energije \textbf{gospodinjskih odjemalcev} za naslenji dan
+    napovedal odjem električne energije \textbf{gospodinjskih odjemalcev} za naslednji dan
 
     }
 
@@ -236,25 +236,7 @@
         \uncover<2->{
         \item Časovna vrsta odjema: visofrekvenčna, ima sezonsko komponento in njeno povprečje ni konstantno 
         \item Družina modelov ARMA }
-        \uncover<2->{
-        \item Iskali bomo koeficiente v formuli:
     \end{itemize}
-
-    \small
-    \begin{equation*}
-        X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_i \varepsilon_{t-i}} + \color{blue} \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  \color{red}  + \sum_{r=1}^{R}{\beta_i Y_{i_{t}}} \color{black} +  \varepsilon_t\,
-    \end{equation*}
-    \normalsize
-
-        }
-
-    \uncover<3->{
-
-    \begin{itemize}
-        \item Kako pridemo do te formule?
-    \end{itemize}
-
-    }
 
 \end{frame}
 
@@ -271,7 +253,7 @@
     \begin{itemize}
         \item Model ARMA }
         \uncover<2->{
-        \item Nimamo popolnoma stacioanrnih podatkov $\rightarrow$ ARIMA
+        \item Nimamo popolnoma stacionarnih podatkov $\rightarrow$ ARIMA
     \end{itemize}
 
     \small
@@ -326,12 +308,12 @@
         \item Družina modelov ARMA ima težavo predvsem pri napovedih časovnih vrst, ki se jim  
         skozi čas spreminja varianca $\rightarrow$ povezava z modelom {\color{green} GARCH} }
         \uncover<2->{
-        \item Dobimo model SARIMAX(p,d,q)(P,D,Q)[S]-GARCH(p,q):
+        \item Dobimo model SARIMAX(p,d,q)(P,D,Q)[S]-GARCH($p_G$,$q_G$):
     \end{itemize}
 
     \small
     \begin{equation*}
-        X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_i \varepsilon_{t-i}} + \color{blue} \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  \color{red}  + \sum_{r=1}^{R}{\beta_i Y_{i_{t}}} \color{black} +  \varepsilon_t \color{green} + \sqrt{\sigma_t} z_t \color{black} \,,
+        X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_i \varepsilon_{t-i}} + \color{blue} \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  \color{red}  + \sum_{r=1}^{R}{\beta_i Y_{i_{t}}} \color{green} + \sqrt{\sigma_t} z_t \color{black} \,,
     \end{equation*}
     \normalsize
 
@@ -519,7 +501,7 @@
     
     \textbf{Naslednji korak:}
 
-    S pomočjo ACF in PACF stacionarne časovne vrste $X_t$ določilmo parametre modela SARIMAX 
+    S pomočjo ACF in PACF stacionarne časovne vrste $X_t$ določimo parametre modela SARIMAX 
 
     }
 
@@ -624,7 +606,7 @@
     \uncover<1->{
 
     \begin{itemize}
-        \item Eksogeni premenljivki: temperatura in sevanje
+        \item Eksogeni spremenljivki: temperatura in sevanje
         \item Model sem trenirala na $75~\%$ podatkih }
         \uncover<2->{
         \item Vrednosti kriterije AIC za izbrane modele:
@@ -714,7 +696,7 @@
 
     \small
     \begin{equation*}
-        X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_i \varepsilon_{t-i}} + \color{blue} \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  \color{red}  + \sum_{r=1}^{R}{\beta_i Y_{i_{t}}} \color{black} +  \varepsilon_t \color{green} + \sqrt{\sigma_t} z_t \color{black} \,,
+        X_t = \mu + \sum_{i=1}^{p}{\varphi_i X_{t-i}} + \sum_{i=1}^{q}{\theta_i \varepsilon_{t-i}} + \color{blue} \sum_{i=1}^{P}{\phi_i X_{t-S}} + \sum_{i=1}^{Q}{\Theta_i \varepsilon_{t-S}}  \color{red}  + \sum_{r=1}^{R}{\beta_i Y_{i_{t}}} \color{green} + \sqrt{\sigma_t} z_t \color{black} \,,
     \end{equation*}
     \normalsize
 
@@ -732,7 +714,7 @@
 
     \small
     \begin{equation*}
-        X_t = \sum_{i=1}^{4}{\varphi_i X_{t-i}} + \sum_{i=1}^{5}{\theta_i \varepsilon_{t-i}} + \color{blue} 0  \color{red}  + \beta_1 Y_{1_{t}} + \beta_2 Y_{2_{t}} \color{black} +  \varepsilon_t \color{green} + \sqrt{\sigma_t} z_t \color{black} \,,
+        X_t = \sum_{i=1}^{4}{\varphi_i X_{t-i}} + \sum_{i=1}^{5}{\theta_i \varepsilon_{t-i}} + \color{blue} 0  \color{red}  + \beta_1 Y_{1_{t}} + \beta_2 Y_{2_{t}} \color{green} + \sqrt{\sigma_t} z_t \color{black} \,,
     \end{equation*}
     \normalsize
 
@@ -752,7 +734,7 @@
 
     \small
     \begin{equation*}
-        X_t = \sum_{i=1}^{4}{\varphi_i X_{t-i}} + \sum_{i=1}^{5}{\theta_i \varepsilon_{t-i}} + \color{blue} 0  \color{red}  + \beta_1 Y_{1_{t}} + \beta_2 Y_{2_{t}} \color{black} +  \varepsilon_t \color{green} + \sqrt{\sigma_t} z_t \color{black} \,,
+        X_t = \sum_{i=1}^{4}{\varphi_i X_{t-i}} + \sum_{i=1}^{5}{\theta_i \varepsilon_{t-i}} + \color{blue} 0  \color{red}  + \beta_1 Y_{1_{t}} + \beta_2 Y_{2_{t}} \color{green} + \sqrt{\sigma_t} z_t \color{black} \,,
     \end{equation*}
 
     kjer je $\color{green} \sigma^2_t = \omega + \sum_{i=1}^{1}{\alpha_i \varepsilon_{t-i}^2} + \sum_{i=1}^{3}{\beta_i \sigma_{t-i}^2} \,$
